@@ -4,8 +4,11 @@ import PageTransition from "@/component/pageTransition/PageTransition";
 import StairTransition from "@/component/pageTransition/StairTransition";
 
 export const metadata = {
-    title: "AmirHatami",
+    title: "امیر حاتمی",
     description: "My Next.js app",
+    icons: {
+        icon: "/logo.svg",
+    },
 };
 
 export default function RootLayout({children}) {
