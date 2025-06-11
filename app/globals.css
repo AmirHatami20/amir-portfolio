@@ -1,0 +1,133 @@
+@import "tailwindcss";
+<<<<<<< HEAD
+@import 'swiper/css';
+
+@layer base {
+    html {
+        direction: rtl;
+    }
+
+    body {
+        @apply font-dana-medium bg-primary text-white leading-loose
+    }
+
+    h1 {
+        @apply text-[48px] lg:text-[60px] xl:text-[68px] leading-[1.2] font-dana-demiBold;
+    }
+
+    h2 {
+        @apply text-[28px] xl:text-[38px] leading-[1.1] font-dana-demiBold;
+    }
+
+    h3 {
+        @apply text-[20px] xl:text-[24px] leading-[1.1] font-dana-demiBold;
+    }
+
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 1rem;
+    width: 100%;
+
+    @variant sm {
+        max-width: 640px;
+    }
+    @variant md {
+        max-width: 768px;
+    }
+    @variant lg {
+        max-width: 1024px;
+    }
+    @variant xl {
+        max-width: 1200px;
+    }
+}
+
+@layer components {
+    .text-outline {
+        color: transparent;
+        -webkit-text-stroke: 1px #ffffff;
+        transition: -webkit-text-stroke-color 0.3s ease;
+    }
+
+    .group:hover .text-outline {
+        -webkit-text-stroke-color: #00ff99;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+@font-face {
+    font-family: 'DanaLight';
+    src: url('/fonts/dana/Dana-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DanaMedium';
+    src: url('/fonts/dana/Dana-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DanaDemiBold';
+    src: url('/fonts/dana/Dana-DemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DanaBold';
+    src: url('/fonts/dana/Dana-ExtraBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --color-primary: #1c1c22;
+    --color-accent: #00ff99;
+    --color-ccent-hover: #00e187;
+
+    --font-dana-light: 'DanaLight';
+    --font-dana-medium: 'DanaMedium';
+    --font-dana-bold: 'DanaBold';
+    --font-dana-demiBold: 'DanaDemiBold';
+=======
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+>>>>>>> origin/main
+}
