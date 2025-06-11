@@ -4,8 +4,8 @@ import PageTransition from "@/component/pageTransition/PageTransition";
 import StairTransition from "@/component/pageTransition/StairTransition";
 
 export const metadata = {
-    title: "امیر حاتمی",
-    description: "My Next.js app",
+    title: "Amir Hatami",
+    description: "Portfolio site",
     icons: {
         icon: "/logo.svg",
     },
