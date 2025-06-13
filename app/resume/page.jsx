@@ -5,6 +5,7 @@ import AboutTab from "@/component/Tabs/AboutTab";
 import EducationTab from "@/component/Tabs/EducationTab";
 import SoftSkillsTab from "@/component/Tabs/SoftSkillsTab";
 import SkillsTab from "@/component/Tabs/SkillsTab";
+import ArrowNav from "@/component/ArrowNav";
 
 
 const resume = () => {
@@ -18,6 +19,7 @@ const resume = () => {
                     {label: "درباره من", content: <AboutTab/>},
                 ]}
             />
+            <ArrowNav prevPath="/services" nextPath="/home" />
         </section>
     );
 };
