@@ -75,11 +75,11 @@ const contact = () => {
                     {/* Form */}
                     <div className="lg:w-[54%] xl:order-none">
                         <form
-                            className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+                            className="flex flex-col gap-6 p-5 lg:p-10 bg-[#27272c] rounded-xl"
                             onSubmit={handleSubmit}
                         >
-                            <h3 className="text-4xl text-accent">بیایید همکاری کنیم.</h3>
-                            <p className="text-white/60">
+                            <h3 className="text-2xl lg:text-4xl text-accent">بیایید همکاری کنیم.</h3>
+                            <p className="text-sm lg:text-base text-white/60">
                                 اگر به دنبال همکاری در پروژه‌ای خلاقانه، چالش‌برانگیز یا توسعه یک ایده هستید، خوشحال
                                 می‌شوم در کنارتان باشم. بیایید با هم کاری متفاوت خلق کنیم.
                             </p>
@@ -135,7 +135,7 @@ const contact = () => {
                         </form>
                     </div>
                     {/* Info */}
-                    <div className="flex-1 flex items-center lg:justify-center lg:order-none mb-8 lg:mb-0">
+                    <div className="flex items-center lg:justify-center lg:order-none mb-8 lg:mb-0">
                         <ul className="flex flex-col gap-10">
                             {info.map((item, index) => (
                                 <li
@@ -147,9 +147,9 @@ const contact = () => {
                                     >
                                         <div className="text-[22px]">{item.icon}</div>
                                     </div>
-                                    <div className="flex-1">
+                                    <div className="flex-1 gap-y-2">
                                         <p className="text-white/60">{item.title}</p>
-                                        <h3 className="text-xl">{item.description}</h3>
+                                        <h3 className="text-sm lg:text-xl">{item.description}</h3>
                                     </div>
                                 </li>
                             ))}

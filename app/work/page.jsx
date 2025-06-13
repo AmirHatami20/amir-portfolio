@@ -68,7 +68,7 @@ const work = () => {
                         <Swiper
                             spaceBetween={30}
                             slidesPerView={1}
-                            className="lg:h-[520px] mb-12"
+                            className="lg:h-[520px] mb-4"
                             onSlideChange={handleSlideChange}
                         >
                             {projects.map((project, index) => (
@@ -77,7 +77,7 @@ const work = () => {
                                     className="w-full"
                                 >
                                     <div
-                                        className="h-[460px] relative group flex justify-center items-center bg-pink-50/20"
+                                        className="h-[260px] lg:h-[460px] relative group flex justify-center items-center bg-pink-50/20"
                                     >
                                         {/* Overlay */}
                                         <div className="absolute top-0 bottom-0 w-full bg-black/10 z-10"/>
@@ -100,13 +100,13 @@ const work = () => {
                     <div
                         className="w-full lg:w-[50%] lg:h-[460px] flex flex-col lg:justify-between"
                     >
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-2 lg:gap-3">
                             {/* Outline Num */}
-                            <div className="text-8xl leading-none font-dana-bold text-transparent text-outline">
+                            <div className="text-5xl lg:text-8xl leading-none font-dana-bold text-transparent text-outline">
                                 {toPersianNumber(project.num)}
                             </div>
                             {/* Project Category */}
-                            <h2 className="text-[40px] leading-none text-white group-hover:text-accent transition-colors duration-200">
+                            <h2 className="text-4xl lg:text-[40px] leading-none text-white group-hover:text-accent transition-colors duration-200">
                                 {project.name}
                             </h2>
                             {/* Project Desc */}

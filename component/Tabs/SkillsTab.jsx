@@ -10,9 +10,11 @@ import {
     SiRedux,
     SiBootstrap,
     SiMysql,
-    SiGit
+    SiGit,
+    SiPostman,
+    SiTypescript
 } from "react-icons/si";
-
+import {FaKey, FaNetworkWired} from "react-icons/fa";
 
 const skills = [
     {name: "HTML", Icon: SiHtml5},
@@ -27,19 +29,27 @@ const skills = [
     {name: "MongoDB", Icon: SiMongodb},
     {name: "MySQL", Icon: SiMysql},
     {name: "Git", Icon: SiGit},
+    {name: "JWT", Icon: FaKey},
+    {name: "Postman", Icon: SiPostman},
+    {name: "TypeScript", Icon: SiTypescript}
 ];
+
 
 const SkillsTab = () => {
     return (
-        <div className="flex flex-col items-center lg:items-stretch space-y-3">
+        <div className="tabs-wrapper">
             <h3>مهارت های من</h3>
-            <p className="text-white/70 lg:max-w-[75%] leading-7">
-                تسلط کامل به توسعه فول‌استک با استفاده از React، Next.js، Node.js و پایگاه‌داده‌های MongoDB و MySQL. همچنین تجربه کار با ابزارهایی مثل Tailwind، Redux، Git، JWT و Multer برای ساخت اپلیکیشن‌های کاربردی و مقیاس‌پذیر.
+            <p className="tabs-text">
+                تسلط کامل به توسعه فول‌استک با استفاده از React، Next.js، Node.js و پایگاه‌داده‌های MongoDB و MySQL.
+                همچنین تجربه کار با ابزارهایی مثل Tailwind، Redux، Git، JWT و Multer برای ساخت اپلیکیشن‌های کاربردی و
+                مقیاس‌پذیر.
             </p>
 
-            <div className="w-full lg:max-w-[90%] mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-[30px] ">
+            <div
+                className="w-full lg:max-w-[85%] mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px] ">
                 {skills.map(({name, Icon}) => (
-                    <div key={name} className="w-full h-[140px] bg-[#232329] rounded-xl flex flex-col items-center justify-center gap-2 text-white group">
+                    <div key={name}
+                         className="w-full h-[120px] bg-[#232329] rounded-xl flex flex-col items-center justify-center gap-2 text-white group">
                         <Icon className="text-5xl text-white group-hover:text-accent transition-all duration-500"/>
                         <span>{name}</span>
                     </div>

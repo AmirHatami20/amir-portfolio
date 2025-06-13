@@ -14,11 +14,11 @@ const about = {
 
 
 const AboutTab = () => (
-    <div className="flex flex-col items-center lg:items-start text-white space-y-4">
+    <div className="tabs-wrapper">
         <h3 className="text-lg font-bold flex items-center gap-2">
             {about.title}
         </h3>
-        <p className="text-gray-300">{about.description || "توضیحی وارد نشده است."}</p>
+        <p className="tabs-text">{about.description || "توضیحی وارد نشده است."}</p>
 
         <ul className="grid sm:grid-cols-2 gap-4">
             {about.info.map(({fieldName, fieldValue}, index) => {

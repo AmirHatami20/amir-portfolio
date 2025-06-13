@@ -55,6 +55,14 @@
     .group:hover .text-outline {
         -webkit-text-stroke-color: #00ff99;
     }
+
+    .tabs-wrapper {
+        @apply flex flex-col items-center lg:items-stretch space-y-3;
+    }
+
+    .tabs-text {
+        @apply text-white/70 text-center lg:text-right lg:max-w-[75%] leading-7
+    }
 }
 
 @font-face {

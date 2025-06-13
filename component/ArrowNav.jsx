@@ -9,7 +9,7 @@ const ArrowNav = ({prevPath = '/', nextPath = '/'}) => {
 
     return (
         <div
-            className="fixed bottom-3 right-3 flex flex-col items-center justify-center gap-y-5 ap z-50 lg:hidden border-2 border-accent rounded-full w-10 h-24"
+            className="fixed bottom-3 right-3 flex flex-col items-center justify-center gap-y-5 ap z-40 lg:hidden border-2 border-accent rounded-full w-10 h-24"
         >
             <button
                 onClick={() => router.push(nextPath)}

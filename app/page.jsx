@@ -28,14 +28,22 @@ const Home = () => {
                         <h1 className="lg:hidden mb-6 text-accent">
                             امیر حاتمی
                         </h1>
-                        <p className="w-full lg:max-w-[500px] mb-9 text-white/80">
+                        {/* Desktop */}
+                        <p className="hidden lg:block w-full max-w-[550px] mb-9 text-white/80">
                             توسعه‌دهنده‌ی فول‌استک با تمرکز روی ساخت اپلیکیشن‌های مدرن وب. در فرانت‌اند با React و
                             Next.js رابط‌های کاربری سریع و بهینه طراحی می‌کنم و با Tailwind CSS تجربه‌ای زیبا و منظم
                             برای کاربر می‌سازم. در بک‌اند هم با Node.js و MongoDB، ساختارهایی مقیاس‌پذیر و امن
                             پیاده‌سازی می‌کنم.
                         </p>
+                        {/* Mobile */}
+                        <p className="block lg:hidden w-full mb-5 text-white/80">
+                            توسعه‌دهنده‌ی فول‌استک با تمرکز روی ساخت اپلیکیشن‌های مدرن وب. در فرانت‌اند با React و
+                            Next.js رابط‌های کاربری سریع و بهینه طراحی می‌کنم و با Tailwind CSS تجربه‌ای زیبا و منظم
+                            برای کاربر می‌سازم. در بک‌اند هم با Node.js و MongoDB، ساختارهای امنی برایتان می سازم.
+                        </p>
+
                         {/* Btn and socials */}
-                        <div className="flex flex-col lg:flex-row items-center gap-8">
+                        <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-8">
                             <Button
                                 variant="outline"
                                 size="lg"

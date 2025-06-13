@@ -24,9 +24,9 @@ const education = [
 
 
 const EducationTab = () => (
-    <div className="flex flex-col items-center lg:items-stretch space-y-3">
+    <div className="tabs-wrapper">
         <h3>تحصیلات من</h3>
-        <p className="text-white/70 lg:max-w-[75%] leading-7">
+        <p className="tabs-text">
             در مسیر تحصیلی‌ام، با ترکیب دیپلم ریاضی‌فیزیک و کاردانی نرم‌افزار، پایه‌ای قوی در منطق، الگوریتم و توسعه
             نرم‌افزار به دست آورده‌ام. همچنین در حال برنامه‌ریزی برای ادامه تحصیل در مقطع کارشناسی مهندسی نرم‌افزار هستم
             تا دانش فنی‌ام را گسترش دهم و در مسیر تخصصی‌تری حرکت کنم. </p>

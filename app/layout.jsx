@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="en">
-        <body className="font-dana-medium antialiased pb-6">
+        <body className="font-dana-medium antialiased">
         <Header/>
         <StairTransition/>
         <PageTransition>
