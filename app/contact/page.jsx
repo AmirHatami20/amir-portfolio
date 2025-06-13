@@ -9,6 +9,7 @@ import CustomSelect from "@/component/ui/CustomSelect";
 import {useState} from "react";
 import TextArea from "@/component/ui/TextArea";
 import Button from "@/component/ui/Button";
+import ArrowNav from "@/component/ArrowNav";
 
 const info = [
     {
@@ -156,7 +157,7 @@ const contact = () => {
                     </div>
                 </div>
             </div>
-
+            <ArrowNav prevPath="/work" nextPath="/" />
         </motion.section>
     );
 };

@@ -19,7 +19,7 @@ const resume = () => {
                     {label: "درباره من", content: <AboutTab/>},
                 ]}
             />
-            <ArrowNav prevPath="/services" nextPath="/home" />
+            <ArrowNav prevPath="/" nextPath="/services" />
         </section>
     );
 };

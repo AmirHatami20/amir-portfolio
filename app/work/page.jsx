@@ -10,6 +10,7 @@ import {BsArrowUpLeft, BsGithub} from "react-icons/bs";
 
 import toPersianNumber from "@/utils/toPersianNumber";
 import WorkSliderBtn from "@/component/WorkSliderBtn";
+import ArrowNav from "@/component/ArrowNav";
 
 const projects = [
     {
@@ -153,6 +154,7 @@ const work = () => {
                     </div>
                 </div>
             </div>
+            <ArrowNav prevPath="/services" nextPath="/contact" />
         </motion.section>
     );
 };

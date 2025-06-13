@@ -53,7 +53,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <ArrowNav prevPath="/resume" nextPath="/contact"/>
+                <ArrowNav prevPath="/contact" nextPath="/resume"/>
             </div>
         </section>
     );
