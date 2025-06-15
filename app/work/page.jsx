@@ -86,7 +86,7 @@ const work = () => {
                                             <Image
                                                 src={project.image}
                                                 fill
-                                                className="object-cover"
+                                                className="object-cover object-top"
                                                 alt="product Img"
                                             />
                                         </div>
