@@ -68,14 +68,14 @@ const contact = () => {
                 opacity: 1,
                 transition: {delay: 2, duration: 0.4, ease: "easeIn"},
             }}
-            className="py-8"
+            className="py-4"
         >
             <div className="container">
                 <div className="flex flex-col lg:flex-row items-center gap-[30px]">
                     {/* Form */}
                     <div className="lg:w-[54%] xl:order-none">
                         <form
-                            className="flex flex-col gap-6 p-5 lg:p-10 bg-[#27272c] rounded-xl"
+                            className="flex flex-col gap-6 p-5 lg:p-7 bg-[#27272c] rounded-xl"
                             onSubmit={handleSubmit}
                         >
                             <h3 className="text-2xl lg:text-4xl text-accent">بیایید همکاری کنیم.</h3>

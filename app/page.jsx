@@ -49,8 +49,15 @@ const Home = () => {
                                 size="lg"
                                 className="uppercase flex items-center gap-2"
                             >
-                                <FiDownload className="text-xl"/>
-                                <span>دانلود رزومه</span>
+                                <a
+                                    href="https://drive.google.com/file/d/1QOhZi4xqMewTIkm0Whz5WOSNVpvbiuUo/view?usp=drive_link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FiDownload className="text-xl"/>
+                                    <span>دانلود رزومه</span>
+                                </a>
+
                             </Button>
                             <div className="mb-8 lg:mb-0">
                                 <Social
