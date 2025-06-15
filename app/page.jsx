@@ -53,6 +53,7 @@ const Home = () => {
                                     href="https://drive.google.com/file/d/1QOhZi4xqMewTIkm0Whz5WOSNVpvbiuUo/view?usp=drive_link"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    className="flex gap-x-2"
                                 >
                                     <FiDownload className="text-xl"/>
                                     <span>دانلود رزومه</span>
