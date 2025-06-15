@@ -50,7 +50,7 @@ const Home = () => {
                                 className="uppercase flex items-center gap-2"
                             >
                                 <a
-                                    href="https://drive.google.com/file/d/1QOhZi4xqMewTIkm0Whz5WOSNVpvbiuUo/view?usp=drive_link"
+                                    href="https://drive.google.com/uc?export=download&id=1QOhZi4xqMewTIkm0Whz5WOSNVpvbiuUo"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex gap-x-2"
