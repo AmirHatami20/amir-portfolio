@@ -1,11 +1,11 @@
 import {
     FaBookOpen,
-    FaClock,
+    FaClock, FaCode,
     FaKeyboard,
     FaLanguage,
     FaProjectDiagram,
     FaRegCalendarCheck,
-    FaRobot,
+    FaRobot, FaSmileWink,
     FaUsers
 } from "react-icons/fa";
 
@@ -17,8 +17,11 @@ const softSkills = [
     {name: "مدیریت زمان", Icon: FaClock},
     {name: "کار با هوش مصنوعی", Icon: FaRobot},
     {name: "همکاری تیمی", Icon: FaUsers},
-    {name: "نظم کاری", Icon: FaRegCalendarCheck}
+    {name: "نظم کاری", Icon: FaRegCalendarCheck},
+    {name: "شوخ‌طبعی", Icon: FaSmileWink},
+    {name: "قدرت حل‌مسئله", Icon: FaCode}
 ];
+
 
 const SoftSkillsTab = () => {
     return (
@@ -29,7 +32,8 @@ const SoftSkillsTab = () => {
                 کار گروهی، حل مسئله و برقراری ارتباط مؤثر برای پیشبرد بهتر اهداف تیمی و فنی.
             </p>
 
-            <div className="w-full lg:max-w-[85%] mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px] ">
+            <div
+                className="w-full lg:max-w-[85%] mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px] ">
                 {softSkills.map(({name, Icon}) => (
                     <div key={name}
                          className="w-full h-[140px] bg-[#232329] rounded-xl flex flex-col items-center justify-center gap-2 text-white group">

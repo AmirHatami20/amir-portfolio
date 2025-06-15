@@ -29,7 +29,8 @@ const EducationTab = () => (
         <p className="tabs-text">
             در مسیر تحصیلی‌ام، با ترکیب دیپلم ریاضی‌فیزیک و کاردانی نرم‌افزار، پایه‌ای قوی در منطق، الگوریتم و توسعه
             نرم‌افزار به دست آورده‌ام. همچنین در حال برنامه‌ریزی برای ادامه تحصیل در مقطع کارشناسی مهندسی نرم‌افزار هستم
-            تا دانش فنی‌ام را گسترش دهم و در مسیر تخصصی‌تری حرکت کنم. </p>
+            تا دانش فنی‌ام را گسترش دهم و در مسیر تخصصی‌تری حرکت کنم.
+        </p>
         <div className="w-full lg:max-w-[90%] mt-4 grid grid-cols-1  md:grid-cols-2 gap-[30px]">
             {education.map(({title, place, year, description}) => (
                 <div key={title} className="flex flex-col space-y-2 bg-[#232329] rounded-xl text-white p-5">
