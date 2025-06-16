@@ -17,21 +17,16 @@ import {
 import {FaKey, FaNetworkWired} from "react-icons/fa";
 
 const skills = [
-    {name: "HTML", Icon: SiHtml5},
-    {name: "CSS", Icon: SiCss3},
-    {name: "JavaScript", Icon: SiJavascript},
-    {name: "React", Icon: SiReact},
-    {name: "Next.js", Icon: SiNextdotjs},
-    {name: "Tailwind CSS", Icon: SiTailwindcss},
-    {name: "Bootstrap", Icon: SiBootstrap},
-    {name: "Redux", Icon: SiRedux},
-    {name: "Node.js", Icon: SiNodedotjs},
-    {name: "MongoDB", Icon: SiMongodb},
-    {name: "MySQL", Icon: SiMysql},
-    {name: "Git", Icon: SiGit},
-    {name: "JWT", Icon: FaKey},
-    {name: "Postman", Icon: SiPostman},
-    {name: "TypeScript", Icon: SiTypescript}
+    {name: "HTML", Icon: SiHtml5, percent: 100},
+    {name: "CSS", Icon: SiCss3, percent: 100},
+    {name: "JavaScript", Icon: SiJavascript, percent: 100},
+    {name: "React", Icon: SiReact, percent: 100},
+    {name: "Tailwind CSS", Icon: SiTailwindcss, percent: 100},
+    {name: "Node.js", Icon: SiNodedotjs, percent: 90},
+    {name: "MongoDB", Icon: SiMongodb, percent: 90},
+    {name: "Next.js", Icon: SiNextdotjs, percent: 90},
+    {name: "Bootstrap", Icon: SiBootstrap, percent: 80},
+    {name: "Redux", Icon: SiRedux, percent: 75},
 ];
 
 
@@ -47,11 +42,19 @@ const SkillsTab = () => {
 
             <div
                 className="w-full lg:max-w-[85%] mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px] ">
-                {skills.map(({name, Icon}) => (
-                    <div key={name}
-                         className="w-full h-[120px] bg-[#232329] rounded-xl flex flex-col items-center justify-center gap-2 text-white group">
+                {skills.map(({name, Icon, percent}) => (
+                    <div
+                        key={name}
+                        className="w-full h-[120px] bg-[#232329] rounded-xl flex flex-col items-center justify-center gap-4 text-white group relative"
+                    >
+                        <div className="absolute bottom-full py-1 text-sm left-0 text-white text-center right-0  rounded-md opacity-0 group-hover:opacity-100 transition duration-500">
+                            {name}
+                        </div>
                         <Icon className="text-5xl text-white group-hover:text-accent transition-all duration-500"/>
-                        <span>{name}</span>
+                        <div className="w-[70%] mx-auto h-4 relative rounded-full border border-white/50  bg-primary">
+                            <div className="bg-accent absolute left-0 rounded-full h-full"
+                                 style={{width: `${percent}%`}}/>
+                        </div>
                     </div>
                 ))}
             </div>

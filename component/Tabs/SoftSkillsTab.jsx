@@ -35,8 +35,10 @@ const SoftSkillsTab = () => {
             <div
                 className="w-full lg:max-w-[85%] mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px] ">
                 {softSkills.map(({name, Icon}) => (
-                    <div key={name}
-                         className="w-full h-[140px] bg-[#232329] rounded-xl flex flex-col items-center justify-center gap-2 text-white group">
+                    <div
+                        key={name}
+                         className="w-full h-[140px] bg-[#232329] rounded-xl flex flex-col items-center justify-center gap-2 text-white text-center group"
+                    >
                         <Icon className="text-5xl text-white group-hover:text-accent transition-all duration-500"/>
                         <span>{name}</span>
                     </div>

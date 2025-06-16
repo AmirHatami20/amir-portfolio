@@ -90,7 +90,7 @@ const Courses = () => {
                 توانسته‌ام دانش فنی خود را به‌صورت کاربردی و مطابق با نیاز بازار توسعه دهم.
             </p>
 
-            <div className="w-full lg:max-w-[90%] mt-4 grid grid-cols-1  md:grid-cols-2 gap-[30px]">
+            <div className="w-full lg:max-w-[90%] mt-4 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
                 {courses.map(({title, company, link, icon: Icon}) => (
                     <div
                         key={title}
