@@ -9,24 +9,20 @@ import {
     SiMongodb,
     SiRedux,
     SiBootstrap,
-    SiMysql,
-    SiGit,
-    SiPostman,
-    SiTypescript
 } from "react-icons/si";
-import {FaKey, FaNetworkWired} from "react-icons/fa";
+import {FaStar} from "react-icons/fa";
 
 const skills = [
-    {name: "HTML", Icon: SiHtml5, percent: 100},
-    {name: "CSS", Icon: SiCss3, percent: 100},
-    {name: "JavaScript", Icon: SiJavascript, percent: 100},
-    {name: "React", Icon: SiReact, percent: 100},
-    {name: "Tailwind CSS", Icon: SiTailwindcss, percent: 100},
-    {name: "Node.js", Icon: SiNodedotjs, percent: 90},
-    {name: "MongoDB", Icon: SiMongodb, percent: 90},
-    {name: "Next.js", Icon: SiNextdotjs, percent: 90},
-    {name: "Bootstrap", Icon: SiBootstrap, percent: 80},
-    {name: "Redux", Icon: SiRedux, percent: 75},
+    {name: "HTML", Icon: SiHtml5, stars: 5},
+    {name: "CSS", Icon: SiCss3, stars: 5},
+    {name: "JavaScript", Icon: SiJavascript, stars: 5},
+    {name: "React", Icon: SiReact, stars: 5},
+    {name: "Tailwind CSS", Icon: SiTailwindcss, stars: 5},
+    {name: "Node.js", Icon: SiNodedotjs, stars: 5},
+    {name: "MongoDB", Icon: SiMongodb, stars: 5},
+    {name: "Next.js", Icon: SiNextdotjs, stars: 4},
+    {name: "Bootstrap", Icon: SiBootstrap, stars: 4},
+    {name: "Redux", Icon: SiRedux, stars: 4},
 ];
 
 
@@ -42,18 +38,24 @@ const SkillsTab = () => {
 
             <div
                 className="w-full lg:max-w-[85%] mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px] ">
-                {skills.map(({name, Icon, percent}) => (
+                {skills.map(({name, Icon, stars}) => (
                     <div
                         key={name}
                         className="w-full h-[120px] bg-[#232329] rounded-xl flex flex-col items-center justify-center gap-4 text-white group relative"
                     >
-                        <div className="absolute bottom-full py-1 text-sm left-0 text-white text-center right-0  rounded-md opacity-0 group-hover:opacity-100 transition duration-500">
+                        <div
+                            className="absolute bottom-full py-0.5 text-sm left-0 text-white text-center right-0  rounded-md opacity-0 group-hover:opacity-100 transition duration-500"
+                        >
                             {name}
                         </div>
                         <Icon className="text-5xl text-white group-hover:text-accent transition-all duration-500"/>
-                        <div className="w-[70%] mx-auto h-4 relative rounded-full border border-white/50  bg-primary">
-                            <div className="bg-accent absolute left-0 rounded-full h-full"
-                                 style={{width: `${percent}%`}}/>
+                        <div className="flex items-center gap-x-0.5">
+                            {Array(5 - stars).fill("").map((_, index) => (
+                                <FaStar className="text-white" key={index}/>
+                            ))}
+                            {Array(stars).fill("").map((_, index) => (
+                                <FaStar className="text-accent" key={index}/>
+                            ))}
                         </div>
                     </div>
                 ))}

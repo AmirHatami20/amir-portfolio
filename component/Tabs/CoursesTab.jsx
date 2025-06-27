@@ -24,7 +24,7 @@ const courses = [
         link: "https://sabzlearn.ir/course-cat/front-end/",
     },
     {
-        title: "آموزش جاوااسکریپت مقدماتی تا پیشرفته + مینی‌پروژه",
+        title: "آموزش جاوااسکریپت مقدماتی تا پیشرفته",
         company: "سبزلرن",
         icon: FaJsSquare,
         link: "https://sabzlearn.ir/course/java-script-zero-to-hero/",
