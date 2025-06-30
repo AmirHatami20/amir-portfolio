@@ -1,7 +1,6 @@
 "use client"
 
 import {FaEnvelope, FaMapMarkerAlt, FaPhoneAlt} from "react-icons/fa";
-
 import {motion} from "framer-motion";
 import Input from "@/component/ui/Input";
 import CustomSelect from "@/component/ui/CustomSelect";
@@ -55,9 +54,6 @@ const contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        console.log(data);
-
     }
 
     return (
