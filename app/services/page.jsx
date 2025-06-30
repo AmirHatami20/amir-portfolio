@@ -2,9 +2,9 @@
 
 import {BsArrowDownLeft} from 'react-icons/bs'
 import Link from 'next/link'
-import {motion} from "framer-motion";
 import toPersianNumber from "@/utils/toPersianNumber";
 import ArrowNav from "@/component/ArrowNav";
+import {motion} from "framer-motion";
 
 const services = [
     {
@@ -72,7 +72,7 @@ const Services = () => {
                             <p className="text-white/70">{service.description}</p>
                         </div>
                     ))}
-                    <ArrowNav prevPath="/resume" nextPath="/work" />
+                    <ArrowNav prevPath="/resume" nextPath="/work"/>
                 </motion.div>
             </div>
         </section>

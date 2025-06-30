@@ -1,6 +1,5 @@
 "use client"
 
-
 import {FaEnvelope, FaMapMarkerAlt, FaPhoneAlt} from "react-icons/fa";
 
 import {motion} from "framer-motion";

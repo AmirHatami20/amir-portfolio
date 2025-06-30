@@ -1,13 +1,11 @@
 "use client"
 
-import {motion} from 'framer-motion'
 import {useState} from 'react'
 
 import {Swiper, SwiperSlide} from "swiper/react"
 import Image from "next/image"
-
+import {motion} from "framer-motion";
 import {BsArrowUpLeft, BsGithub} from "react-icons/bs";
-
 import toPersianNumber from "@/utils/toPersianNumber";
 import WorkSliderBtn from "@/component/WorkSliderBtn";
 import ArrowNav from "@/component/ArrowNav";
@@ -102,7 +100,8 @@ const work = () => {
                     >
                         <div className="flex flex-col gap-2 lg:gap-3">
                             {/* Outline Num */}
-                            <div className="text-5xl lg:text-8xl leading-none font-dana-bold text-transparent text-outline">
+                            <div
+                                className="text-5xl lg:text-8xl leading-none font-dana-bold text-transparent text-outline">
                                 {toPersianNumber(project.num)}
                             </div>
                             {/* Project Category */}
@@ -154,7 +153,7 @@ const work = () => {
                     </div>
                 </div>
             </div>
-            <ArrowNav prevPath="/services" nextPath="/contact" />
+            <ArrowNav prevPath="/services" nextPath="/contact"/>
         </motion.section>
     );
 };
