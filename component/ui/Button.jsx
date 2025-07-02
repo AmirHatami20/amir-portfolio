@@ -1,9 +1,9 @@
 const Button = ({children, variant = "default", size = "md", className = "", onClick, ...props}) => {
     const variants = {
-        default: "bg-accent text-white hover:bg-accent/90",
+        default: "bg-accent text-white hover:bg-accent/90 active:bg-accent/90",
         primary: "bg-primary text-white",
-        outline: "border border-accent/80 text-accent bg-transparent hover:bg-accent hover:text-primary",
-        danger: "bg-red-500 text-white hover:bg-red-600",
+        outline: "border border-accent/80 text-accent bg-transparent hover:bg-accent hover:text-primary active:bg-accent active:text-primary",
+        danger: "bg-red-500 text-white hover:bg-red-600 active:bg-red-600",
     }
 
     const sizes = {
@@ -14,7 +14,7 @@ const Button = ({children, variant = "default", size = "md", className = "", onC
 
     return (
         <button
-             onClick={onClick}
+            onClick={onClick}
             className={`cursor-pointer inline-flex items-center justify-center whitespace-nowrap rounded-full font-semibold ring-offset-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent/50 disabled:opacity-50 disabled:pointer-events-none ${variants[variant] || variants.default} ${sizes[size]} ${className} `}
             {...props}
         >
