@@ -41,22 +41,17 @@ const Home = () => {
 
                     {/* Btn and socials */}
                     <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-8">
-                        <Button
-                            variant="outline"
-                            size="lg"
-                            className="uppercase flex items-center gap-2"
-                        >
-                            <a
-                                href="https://drive.google.com/uc?export=download&id=1QOhZi4xqMewTIkm0Whz5WOSNVpvbiuUo"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex gap-x-2"
+                        <a href="/resume.pdf" download>
+                            <Button
+                                variant="outline"
+                                size="lg"
+                                className="uppercase flex items-center gap-2"
                             >
                                 <FiDownload className="text-xl"/>
                                 <span>دانلود رزومه</span>
-                            </a>
+                            </Button>
+                        </a>
 
-                        </Button>
                         <div className="mb-8 lg:mb-0">
                             <Social
                                 containerStyle="flex items-center justify-center gap-3 lg:gap-5"
@@ -64,6 +59,7 @@ const Home = () => {
                             />
                         </div>
                     </div>
+
                 </div>
             </div>
             <ArrowNav prevPath="/contact" nextPath="/resume"/>
