@@ -61,7 +61,7 @@
     }
 
     .tabs-text {
-        @apply text-white/70 text-center lg:text-right lg:max-w-[75%] leading-7
+        @apply text-white/70 text-center lg:text-right lg:max-w-[80%] leading-7
     }
 }
 

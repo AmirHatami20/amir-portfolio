@@ -17,12 +17,21 @@ const projects = [
         title: 'پیاده سازی کامل سایت سبزلرن',
         description: 'پیاده سازی سایت سبز لرن با استفاده از تکنولوژی MERN و بهره گیری عالی سایت ، بارگذاری عکس ها در فضای ابری و سیستم احزار هویت',
         stack: ["React", "Tailwind", "Nodejs", "MongoDB", "JWT"],
-        image: "/assets/work/Untitled-1.jpg",
+        image: "/assets/work/Untitled-1.png",
         live: "https://sabzlearn-lovat.vercel.app/",
         github: "https://github.com/AmirHatami20/sabzlearn",
     },
     {
         num: "02",
+        name: "کتابخانه آنلاین",
+        description: 'پیاده سازی سایت با استفاده از تکنولوژی MERN و بهره گیری عالی سایت ، بارگذاری عکس ها در فضای ابری و سیستم احزار هویت',
+        stack: ["NextJs", "PostgerSql", "React-query", "Tailwind", "Next-api", "Next-auth"],
+        image: "/assets/work/Untitled-2.jpg",
+        live: "https://vegetable-shop-blue.vercel.app/",
+        github: "https://github.com/AmirHatami20/vegetable-shop"
+    },
+    {
+        num: "03",
         name: "فروشگاه سبزیجات",
         title: 'پیاده سازی سایت فروشگاهی',
         description: 'پیاده سازی سایت با استفاده از تکنولوژی MERN و بهره گیری عالی سایت ، بارگذاری عکس ها در فضای ابری و سیستم احزار هویت',
@@ -62,11 +71,11 @@ const work = () => {
         >
             <div className="container">
                 <div className="flex flex-col lg:flex-row-reverse lg:gap-[30px]">
-                    <div className="w-full lg:w-[50%]">
+                    <div className="w-full lg:w-1/2">
                         <Swiper
                             spaceBetween={30}
                             slidesPerView={1}
-                            className="lg:h-[520px] mb-4"
+                            className="lg:h-[500px] mb-4"
                             onSlideChange={handleSlideChange}
                         >
                             {projects.map((project, index) => (
@@ -75,7 +84,7 @@ const work = () => {
                                     className="w-full"
                                 >
                                     <div
-                                        className="h-[260px] lg:h-[460px] relative group flex justify-center items-center bg-pink-50/20"
+                                        className="h-[250px] lg:h-[450px] relative group flex justify-center items-center bg-pink-50/20"
                                     >
                                         {/* Overlay */}
                                         <div className="absolute top-0 bottom-0 w-full bg-black/10 z-10"/>
@@ -84,7 +93,7 @@ const work = () => {
                                             <Image
                                                 src={project.image}
                                                 fill
-                                                className="object-cover object-top"
+                                                className="object-cover object-top rounded"
                                                 alt="product Img"
                                             />
                                         </div>

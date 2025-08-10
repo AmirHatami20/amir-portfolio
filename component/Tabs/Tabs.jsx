@@ -24,7 +24,7 @@ const Tabs = ({tabs}) => {
 };
 
 const TabList = ({children}) => (
-    <div className="flex flex-col space-y-5 lg:min-w-[360px]">{children}</div>
+    <div className="flex flex-col lg:mt-18 space-y-5 lg:min-w-[360px]">{children}</div>
 );
 
 const TabTrigger = ({label, isActive, onClick}) => (

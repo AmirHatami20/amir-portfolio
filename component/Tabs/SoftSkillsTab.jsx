@@ -33,7 +33,7 @@ const SoftSkillsTab = () => {
             </p>
 
             <div
-                className="w-full lg:max-w-[85%] mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px] ">
+                className="w-full lg:max-w-[85%] mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 ">
                 {softSkills.map(({name, Icon}) => (
                     <div
                         key={name}

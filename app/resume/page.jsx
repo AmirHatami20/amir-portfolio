@@ -12,7 +12,7 @@ import CoursesTab from "@/component/Tabs/CoursesTab";
 
 const resume = () => {
     return (
-        <section className="py-6">
+        <section className="py-4">
             <motion.div
                 initial={{opacity: 0}}
                 animate={{
