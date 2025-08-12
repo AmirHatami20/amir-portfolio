@@ -12,7 +12,7 @@ const Photo = () => {
                     opacity: 1,
                     transition: { delay: 2, duration: 0.3, ease: "easeInOut" },
                 }}
-                className="relative w-[250px] h-[250px] lg:w-[480px] lg:h-[480px] rounded-full overflow-hidden"
+                className="relative w-[250px] h-[250px] lg:w-[480px] lg:h-[480px] rounded-full overflow-hidden shadow-sm shadow-accent"
             >
                 <Image
                     src="/assets/photo.png"

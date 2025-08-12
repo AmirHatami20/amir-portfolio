@@ -20,7 +20,7 @@ const CustomSelect = ({options, value, placeholder = "انتخاب سرویس...
             {/* Trigger */}
             <div
                 onClick={() => setOpen(prev => !prev)}
-                className="flex items-center cursor-pointer w-full h-10 text-sm rounded-md border border-white/10 focus:border-accent font-dana-light bg-primary px-4 py-5 justify-between text-white/60"
+                className="flex items-center cursor-pointer w-full h-10 text-sm rounded-md border border-white/10 focus:border-accent font-light bg-primary px-4 py-5 justify-between text-white/60"
             >
                 <span>{selected?.label || placeholder}</span>
                 <FaAngleDown

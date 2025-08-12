@@ -7,19 +7,19 @@
     }
 
     body {
-        @apply font-dana-medium bg-primary text-white leading-loose
+        @apply bg-primary text-white leading-loose
     }
 
     h1 {
-        @apply text-[48px] lg:text-[60px] xl:text-[68px] leading-[1.2] font-dana-demiBold;
+        @apply text-[48px] lg:text-[60px] xl:text-[68px] leading-[1.2] font-semibold;
     }
 
     h2 {
-        @apply text-[28px] xl:text-[38px] leading-[1.1] font-dana-demiBold;
+        @apply text-[28px] xl:text-[38px] leading-[1.1] font-semibold;
     }
 
     h3 {
-        @apply text-[20px] xl:text-[24px] leading-[1.1] font-dana-demiBold;
+        @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
     }
 
 }
@@ -65,47 +65,10 @@
     }
 }
 
-@font-face {
-    font-family: 'DanaLight';
-    src: url('/fonts/dana/Dana-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'DanaMedium';
-    src: url('/fonts/dana/Dana-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'DanaDemiBold';
-    src: url('/fonts/dana/Dana-DemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'DanaBold';
-    src: url('/fonts/dana/Dana-ExtraBold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
 @theme {
     --color-primary: #1c1c22;
     --color-accent: #00ff99;
     --color-ccent-hover: #00e187;
-
-    --font-dana-light: 'DanaLight';
-    --font-dana-medium: 'DanaMedium';
-    --font-dana-bold: 'DanaBold';
-    --font-dana-demiBold: 'DanaDemiBold';
 }
 
 

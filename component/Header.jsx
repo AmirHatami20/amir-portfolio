@@ -23,7 +23,7 @@ const Header = () => {
 
                 {/* Logo */}
                 <Link href="/">
-                    <h1 className="text-4xl font-dana-demiBold">
+                    <h1 className="text-4xl font-semibold">
                         <span className="text-accent hover:text-accent-hover">.</span> Amir
                     </h1>
                 </Link>

@@ -14,43 +14,55 @@ const projects = [
     {
         num: "01",
         name: "سایت سبزلرن",
-        title: 'پیاده سازی کامل سایت سبزلرن',
-        description: 'پیاده سازی سایت سبز لرن با استفاده از تکنولوژی MERN و بهره گیری عالی سایت ، بارگذاری عکس ها در فضای ابری و سیستم احزار هویت',
-        stack: ["React", "Tailwind", "Nodejs", "MongoDB", "JWT"],
-        image: "/assets/work/Untitled-1.png",
-        live: "https://sabzlearn-lovat.vercel.app/",
-        github: "https://github.com/AmirHatami20/sabzlearn",
+        description: 'پیاده‌سازی سایت آموزشی سبزلرن با MERN استک؛ شامل پنل ادمین، احراز هویت امن با JWT، جستجوی هوشمند، ذخیره تصاویر در فضای ابری، امکان ثبت نظر کاربران و پشتیبانی از حالت تیره و روشن.',
+        stack: ["React", "Tailwind", "NodeJs", "MongoDB", "Multer", "JWT"],
+        image: "/images/work/Untitled-1.png",
+        icon: "/images/work/icons/1.png",
+        live: "https://sabzlearn-frontend.vercel.app/",
+        github: "https://github.com/AmirHatami20/sabzlearn-frontend"
     },
     {
         num: "02",
         name: "کتابخانه آنلاین",
-        description: 'پیاده سازی سایت با استفاده از تکنولوژی MERN و بهره گیری عالی سایت ، بارگذاری عکس ها در فضای ابری و سیستم احزار هویت',
-        stack: ["NextJs", "PostgerSql", "React-query", "Tailwind", "Next-api", "Next-auth"],
-        image: "/assets/work/Untitled-2.jpg",
-        live: "https://vegetable-shop-blue.vercel.app/",
-        github: "https://github.com/AmirHatami20/vegetable-shop"
+        description: 'پیاده‌سازی سایت کتابخانه آنلاین با NextJs و تایپ‌اسکریپت،دارای پنل ادمین، احراز هویت امن با ورود گوگل، جستجوی پیشرفته، ذخیره‌سازی تصاویر در فضای ابری و مدیریت وضعیت با ReactQuery.',
+        stack: ["NextJs", "Tailwind", "TypeScript", "ReactQuery", "NextAuth", "PostgerSql", "React"],
+        image: "/images/work/Untitled-2.png",
+        icon: "/images/work/icons/2.png",
+        live: "https://library-khaki-sigma.vercel.app/",
+        github: "https://github.com/AmirHatami20/library"
     },
     {
         num: "03",
-        name: "فروشگاه سبزیجات",
-        title: 'پیاده سازی سایت فروشگاهی',
-        description: 'پیاده سازی سایت با استفاده از تکنولوژی MERN و بهره گیری عالی سایت ، بارگذاری عکس ها در فضای ابری و سیستم احزار هویت',
-        stack: ["React", "Tailwind", "Nodejs", "MongoDB", "REDUX"],
-        image: "/assets/work/Untitled-3.jpg",
-        live: "https://vegetable-shop-blue.vercel.app/",
-        github: "https://github.com/AmirHatami20/vegetable-shop"
+        name: "فروشگاه پیتزا",
+        description: 'پیاده‌سازی فروشگاه پیتزا با NextJs و تایپ‌اسکریپت، دارای پنل ادمین حرفه ای، احراز هویت امن وپیشرفته با ورود گوگل، سبد خرید داینامیک با انتخاب سایز محصول، و ذخیره‌سازی تصاویر در فضای ابری.',
+        stack: ["NextJs", "Tailwind", "TypeScript", "MongoDB", "Multer", "NextAuth", "Redux"],
+        image: "/images/work/Untitled-3.png",
+        icon: "/images/work/icons/3.svg",
+        live: "https://pizza-shop-fawn-zeta.vercel.app/",
+        github: "https://github.com/AmirHatami20/pizza-shop"
     },
     {
-        num: "03",
-        name: "سایت نظرسنجی",
-        title: 'پیاده سازی سایت نظرسنجی',
-        description: 'پیاده سازی سایت با استفاده از تکنولوژی MERN و بهره گیری عالی سایت ، بارگذاری عکس ها در فضای ابری و سیستم احزار هویت',
-        stack: ["React", "Tailwind", "Nodejs", "MongoDB", "JWT"],
-        image: "/assets/work/Untitled-2.jpg",
-        live: "https://polling-site-snowy.vercel.app/dashboard",
-        github: "https://github.com/AmirHatami20/polling-site"
+        num: "04",
+        name: "فروشگاه میوه",
+        description: 'پیاده‌سازی فروشگاه میوه با NextJs و تایپ‌اسکریپت، شامل پنل ادمین کامل، احراز هویت امن و پیشرفته، سبد خرید کارآمد و ذخیره‌سازی تصاویر در فضای ابری، به همراه مدیریت داده‌ها با ReactQuery.',
+        stack: ["NextJs", "Tailwind", "TypeScript", "MongoDB", "Multer", "JWT", "ReactQuery"],
+        image: "/images/work/Untitled-4.png",
+        icon: "/images/work/icons/4.png",
+        live: "https://fruits-shop-five.vercel.app/",
+        github: "https://github.com/AmirHatami20/fruits-shop"
+    },
+    {
+        num: "05",
+        name: "سایت سفر",
+        description: 'پیاده‌سازی سایت سفر بدون بک‌اند با NextJs و تایپ‌اسکریپت که با انیمیشن‌های جذاب و طراحی زیبا، تجربه کاربری فرانت‌اند روان و دلنشینی ارائه می‌دهد.',
+        stack: ["NextJs", "Tailwind", "TypeScript", "Animation"],
+        image: "/images/work/Untitled-5.png",
+        icon: "/images/work/icons/5.svg",
+        live: "https://travel-app-two-wine.vercel.app/",
+        github: "https://github.com/AmirHatami20/travel-app"
     }
 ]
+
 
 const work = () => {
     const [project, setProject] = useState(projects[0]);
@@ -67,7 +79,7 @@ const work = () => {
                 opacity: 1,
                 transition: {delay: 2, duration: 0.4, easing: 'easeIn'},
             }}
-            className="flex flex-col justify-center py-6 xl:px-0"
+            className="flex flex-col justify-center py-3 md:py-6 xl:px-0"
         >
             <div className="container">
                 <div className="flex flex-col lg:flex-row-reverse lg:gap-[30px]">
@@ -75,6 +87,7 @@ const work = () => {
                         <Swiper
                             spaceBetween={30}
                             slidesPerView={1}
+
                             className="lg:h-[500px] mb-4"
                             onSlideChange={handleSlideChange}
                         >
@@ -84,7 +97,7 @@ const work = () => {
                                     className="w-full"
                                 >
                                     <div
-                                        className="h-[250px] lg:h-[450px] relative group flex justify-center items-center bg-pink-50/20"
+                                        className="h-[260px] lg:h-[450px] relative group flex justify-center items-center bg-pink-50/20"
                                     >
                                         {/* Overlay */}
                                         <div className="absolute top-0 bottom-0 w-full bg-black/10 z-10"/>
@@ -107,18 +120,25 @@ const work = () => {
                     <div
                         className="w-full lg:w-[50%] lg:h-[460px] flex flex-col lg:justify-between"
                     >
-                        <div className="flex flex-col gap-2 lg:gap-3">
+                        <div className="flex flex-col gap-2">
                             {/* Outline Num */}
                             <div
-                                className="text-5xl lg:text-8xl leading-none font-dana-bold text-transparent text-outline">
+                                className="text-5xl lg:text-7xl leading-none font-bold text-transparent text-outline">
                                 {toPersianNumber(project.num)}
                             </div>
-                            {/* Project Category */}
-                            <h2 className="text-4xl lg:text-[40px] leading-none text-white group-hover:text-accent transition-colors duration-200">
-                                {project.name}
-                            </h2>
+                            {/* Project Name */}
+                            <div className="flex gap-x-3 items-center">
+                                <h2 className="text-4xl lg:text-[40px] leading-none text-white group-hover:text-accent transition-colors duration-200">
+                                    {project.name}
+                                </h2>
+                                <img
+                                    src={project.icon}
+                                    alt="icon"
+                                    className="w-9 lg:w-11 h-9 lg:h-11 rounded-full shadow"
+                                />
+                            </div>
                             {/* Project Desc */}
-                            <p className="text-white/70">
+                            <p className="text-white/70 my-1.5 md:my-2.5">
                                 {project.description}
                             </p>
                             {/* Stock */}

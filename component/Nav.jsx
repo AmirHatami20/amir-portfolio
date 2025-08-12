@@ -4,8 +4,8 @@ import Link from 'next/link';
 import {usePathname} from "next/navigation";
 
 const links = [
-    {name: "نمونه‌کار", path: "/work"},
     {name: "خدمات", path: "/services"},
+    {name: "نمونه‌کار", path: "/work"},
     {name: "رزومه", path: "/resume"},
     {name: "صفحه اصلی", path: "/"},
 ]

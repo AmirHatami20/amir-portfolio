@@ -53,7 +53,7 @@ const Services = () => {
                             {/* Top */}
                             <div className="w-full flex justify-between items-center">
                                 <span
-                                    className="text-4xl font-dana-bold text-outline text-transparent transition-colors duration-500"
+                                    className="text-4xl font-bold text-outline text-transparent transition-colors duration-500"
                                 >
                                     {toPersianNumber(service.num)}
                                 </span>

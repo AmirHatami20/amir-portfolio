@@ -9,8 +9,8 @@ import {IoMdClose} from "react-icons/io"
 const links = [
     {name: "صفحه اصلی", path: "/"},
     {name: "رزومه", path: "/resume"},
-    {name: "خدمات", path: "/services"},
     {name: "نمونه‌کار", path: "/work"},
+    {name: "خدمات", path: "/services"},
     {name: "ارتباط با من", path: "/contact"},
 ]
 
@@ -56,7 +56,7 @@ const MobileNav = () => {
                     className="flex justify-center items-center mb-12 mt-8"
                     href="/"
                     onClick={() => setOpen(false)}>
-                    <h1 className="text-4xl font-dana-demiBold">
+                    <h1 className="text-4xl">
                         <span className="text-accent hover:text-accent-hover">.</span> Amir
                     </h1>
                 </Link>
