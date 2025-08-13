@@ -7,7 +7,7 @@ import ArrowNav from "@/component/ArrowNav";
 const Home = () => {
     return (
         <section className="container h-full">
-            <div className="grid grid-cols-1 lg:grid-cols-2 justify-between lg:pt-6 lg:pb-14">
+            <div className="grid grid-cols-1 lg:grid-cols-2 justify-between lg:pt-6 lg:pb-14 relative">
                 {/* Image  */}
                 <div className="flex items-center justify-center w-full mb-6 lg:mb-0 lg:order-2">
                     <Photo/>

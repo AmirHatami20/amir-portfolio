@@ -5,7 +5,7 @@ import MobileNav from "@/component/MobileNav";
 
 const Header = () => {
     return (
-        <header className="py-5 lg:py-7 text-white">
+        <header className="pt-5 pb-3 lg:py-7 text-white">
             <div className="container flex justify-between items-center">
 
                 {/* Desktop nav & hire button */}

@@ -9,29 +9,30 @@ import {motion} from "framer-motion";
 const services = [
     {
         num: "01",
-        title: "توسعه فرانت‌اند مدرن",
+        title: "توسعه فول‌استک با Next.js و MERN",
         description:
-            "طراحی رابط‌های کاربری واکنش‌گرا و سریع با React، Next.js و Tailwind CSS، تمرکز روی تجربه کاربری و سازگاری با دستگاه‌های مختلف.",
+            "پیاده‌سازی وب‌اپلیکیشن‌های فول‌استک مدرن با Next.js، React، Node.js و MongoDB، همراه با بهینه‌سازی سئو و رندر سمت سرور (SSR)."
     },
     {
         num: "02",
-        title: "توسعه بک‌اند با Node.js",
+        title: "توسعه فرانت‌اند سریع و واکنش‌گرا",
         description:
-            "ساخت سرورهای امن و مقیاس‌پذیر با Node.js و Express، طراحی APIهای ساختارمند و اتصال به MongoDB با تمرکز بر امنیت و پایداری.",
+            "ساخت رابط‌های کاربری زیبا و واکنش‌گرا با React، Tailwind CSS و TypeScript، همراه با مدیریت داده‌ها با Redux و React Query."
     },
     {
         num: "03",
-        title: "احراز هویت و امنیت کاربران",
+        title: "توسعه بک‌اند امن و مقیاس‌پذیر",
         description:
-            "پیاده‌سازی سیستم‌های احراز هویت با JWT، آپلود امن فایل‌ها با Multer و رمزنگاری داده‌ها برای حفاظت کامل از اطلاعات کاربران.",
+            "طراحی و پیاده‌سازی APIهای RESTful و GraphQL با Node.js و Express، اتصال به MongoDB و PostgreSQL، و استفاده از Drizzle ORM."
     },
     {
         num: "04",
-        title: "توسعه اپلیکیشن‌های فول‌استک",
+        title: "احراز هویت و امنیت پیشرفته",
         description:
-            "ساخت اپلیکیشن‌های کامل فول‌استک با هماهنگی فرانت‌اند و بک‌اند، مدیریت وضعیت با Redux و ساختار منظم برای توسعه آسان آینده.",
-    },
+            "پیاده‌سازی سیستم‌های احراز هویت با NextAuth.js و JWT، رمزنگاری داده‌ها، و اطمینان از امنیت کامل کاربران و اطلاعات."
+    }
 ];
+
 
 const Services = () => {
     return (
@@ -45,31 +46,31 @@ const Services = () => {
                     }}
                     className="grid grid-cols-1 md:grid-cols-2 gap-4"
                 >
-                    {services.map((service, index) => (
+                    {services?.map((service, index) => (
                         <div
                             key={index}
-                            className="flex flex-col justify-center gap-6 group border border-white/20 hover:border-accent/40 transition-colors duration-500 p-4 rounded-2xl"
+                            className="flex flex-col justify-center gap-3 lg:gap-5 group border border-white/20 hover:border-accent/40 transition-colors duration-500 p-4 rounded-2xl"
                         >
                             {/* Top */}
                             <div className="w-full flex justify-between items-center">
                                 <span
-                                    className="text-4xl font-bold text-outline text-transparent transition-colors duration-500"
+                                    className="text-4xl lg:text-5xl font-bold text-outline text-transparent transition-colors duration-500"
                                 >
                                     {toPersianNumber(service.num)}
                                 </span>
                                 <Link
                                     href=""
-                                    className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:rotate-45"
+                                    className="w-10 h-10 lg:w-[70px] lg:h-[70px] rounded-full bg-white group-hover:bg-accent transition-all flex justify-center items-center hover:rotate-45"
                                 >
-                                    <BsArrowDownLeft className="text-3xl text-primary"/>
+                                    <BsArrowDownLeft className="text-xl lg:text-3xl text-primary"/>
                                 </Link>
                             </div>
                             {/* Title */}
-                            <h2 className="leading-none group-hover:text-accent transition-all duration-500">
+                            <h2 className="text-lg lg:text-3xl leading-7 group-hover:text-accent transition-all">
                                 {service.title}
                             </h2>
                             {/* Description */}
-                            <p className="text-white/70">{service.description}</p>
+                            <p className="text-sm leading-6 lg:leading-7 lg:text-base text-white/70">{service.description}</p>
                         </div>
                     ))}
                     <ArrowNav prevPath="/resume" nextPath="/work"/>

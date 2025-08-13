@@ -159,6 +159,7 @@ const work = () => {
                             <div className="flex gap-x-5">
                                 <div className="flex flex-col gap-y-1 items-center justify-center group">
                                     <a
+                                        target="_blank"
                                         href={project.live}
                                         className="w-16 h-16 flex justify-center items-center text-white bg-[#232329] text-3xl rounded-full hover:bg-accent hover:text-primary transition duration-500"
                                     >
@@ -169,6 +170,7 @@ const work = () => {
                                 </div>
                                 <div className="flex flex-col gap-y-1 items-center justify-center group">
                                     <a
+                                        target="_blank"
                                         href={project.github}
                                         className="w-16 h-16 flex justify-center items-center text-white bg-[#232329] text-3xl rounded-full hover:bg-accent hover:text-primary transition duration-500"
                                     >

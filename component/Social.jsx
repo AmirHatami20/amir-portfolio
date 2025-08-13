@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import {FaGithub, FaPhoneAlt, FaTelegram, FaWhatsapp} from "react-icons/fa";
 
 const socials = [
@@ -13,13 +11,14 @@ const Social = ({containerStyle, iconStyle}) => {
     return (
         <div className={containerStyle}>
             {socials.map((social, index) => (
-                <Link
+                <a
+                    target="_blank"
                     key={index}
                     href={social.path}
                     className={iconStyle}
                 >
                     {social.icon}
-                </Link>
+                </a>
             ))}
         </div>
     );
