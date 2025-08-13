@@ -1,21 +1,21 @@
 "use client"
 
-import { motion } from "framer-motion"
+import {motion} from "framer-motion"
 import Image from "next/image"
 
 const Photo = () => {
     return (
         <div className="w-full h-full relative flex items-center justify-center">
             <motion.div
-                initial={{ opacity: 0 }}
+                initial={{opacity: 0}}
                 animate={{
                     opacity: 1,
-                    transition: { delay: 2, duration: 0.3, ease: "easeInOut" },
+                    transition: {delay: 2, duration: 0.3, ease: "easeInOut"},
                 }}
-                className="relative w-[250px] h-[250px] lg:w-[480px] lg:h-[480px] rounded-full overflow-hidden shadow-sm shadow-accent"
+                className="relative w-[250px] h-[250px] lg:w-[480px] lg:h-[480px] rounded-full overflow-hidden"
             >
                 <Image
-                    src="/assets/photo.png"
+                    src="/images/photo.png"
                     alt="me"
                     className="object-cover object-center"
                     quality={100}
@@ -23,7 +23,7 @@ const Photo = () => {
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/20 z-10" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/20 z-10"/>
 
                 {/* Animated Circle Border */}
                 <motion.svg
@@ -38,7 +38,7 @@ const Photo = () => {
                         r="248"
                         stroke="#00ff99"
                         strokeWidth="4"
-                        initial={{ strokeDasharray: "15 120 25 25" }}
+                        initial={{strokeDasharray: "15 120 25 25"}}
                         animate={{
                             strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
                             rotate: [0, 360],

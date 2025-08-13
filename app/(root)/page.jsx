@@ -23,7 +23,7 @@ const Home = () => {
                         <br/>های دیجیتال.
                     </h1>
                     {/* Mobile */}
-                    <h1 className="lg:hidden mb-3 text-accent">
+                    <h1 className="lg:hidden mb-3 text-4xl text-accent">
                         امیررضا حاتمی
                     </h1>
                     {/* Desktop */}
