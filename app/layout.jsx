@@ -59,6 +59,7 @@ export default function RootLayout({ children }) {
                     }),
                 }}
             />
+            <title></title>
         </head>
         <body className={`${Dana.className} antialiased`}>
         <Header />
