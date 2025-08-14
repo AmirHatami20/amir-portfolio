@@ -1,10 +1,10 @@
-import {FaGithub, FaPhoneAlt, FaTelegram, FaWhatsapp} from "react-icons/fa";
+import {FaGithub, FaLinkedin, FaPhoneAlt, FaTelegram} from "react-icons/fa";
 
 const socials = [
     {icon: <FaGithub/>, path: "https://github.com/AmirHatami20"},
     {icon: <FaPhoneAlt/>, path: "tel:09309242634"},
     {icon: <FaTelegram/>, path: "https://t.me/amir_hatami0"},
-    {icon: <FaWhatsapp/>, path: ""},
+    {icon: <FaLinkedin/>, path: "https://www.linkedin.com/in/amir-hatami-39876a37a/"},
 ]
 
 const Social = ({containerStyle, iconStyle}) => {
