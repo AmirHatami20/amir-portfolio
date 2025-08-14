@@ -23,13 +23,13 @@ export const metadata = {
         title: "امیر رضا حاتمی | توسعه‌دهنده وب",
         description: "پرتفولیوی امیر رضا حاتمی - توسعه‌دهنده وب، برنامه‌نویس React و طراح رابط کاربری.",
         url: "https://amir-htm.ir",
-        siteName: "Amir Reza Hatami Portfolio",
+        siteName: "سایت امیررضا حاتمی",
         images: [
             {
                 url: "/images/photo.png",
                 width: 1200,
                 height: 630,
-                alt: "Amir Reza Hatami Portfolio Preview",
+                alt: "امیرضا حاتمی عکس",
             },
         ],
         locale: "fa_IR",
