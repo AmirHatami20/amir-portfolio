@@ -6,10 +6,10 @@ import localFont from "next/font/local";
 
 const Dana = localFont({
     src: [
-        { path: "/fonts/dana/Dana-Regular.woff2", weight: "400", style: "normal" },
-        { path: "/fonts/dana/Dana-Medium.woff2", weight: "500", style: "normal" },
-        { path: "/fonts/dana/Dana-DemiBold.woff2", weight: "600", style: "normal" },
-        { path: "/fonts/dana/Dana-Bold.woff2", weight: "700", style: "normal" },
+        {path: "/fonts/dana/Dana-Regular.woff2", weight: "400", style: "normal"},
+        {path: "/fonts/dana/Dana-Medium.woff2", weight: "500", style: "normal"},
+        {path: "/fonts/dana/Dana-DemiBold.woff2", weight: "600", style: "normal"},
+        {path: "/fonts/dana/Dana-Bold.woff2", weight: "700", style: "normal"},
     ],
 });
 
@@ -17,19 +17,19 @@ export const metadata = {
     title: "امیر رضا حاتمی | توسعه‌دهنده وب و طراح رابط کاربری",
     description: "پرتفولیوی امیر رضا حاتمی - توسعه‌دهنده وب، برنامه‌نویس React و طراح رابط کاربری. مشاهده نمونه‌کارها و اطلاعات تماس.",
     icons: {
-        icon: "/logo.svg",
+        icon: "/favicon.ico",
     },
     openGraph: {
         title: "امیر رضا حاتمی | توسعه‌دهنده وب",
         description: "پرتفولیوی امیر رضا حاتمی - توسعه‌دهنده وب، برنامه‌نویس React و طراح رابط کاربری.",
         url: "https://amir-htm.ir",
-        siteName: "Amir Reza Hatami Portfolio",
+        siteName: "سایت امیررضا حاتمی",
         images: [
             {
-                url: "/images/photo.png",
+                url: "/favicon.ico",
                 width: 1200,
                 height: 630,
-                alt: "Amir Reza Hatami Portfolio Preview",
+                alt: "امیرضا حاتمی عکس",
             },
         ],
         locale: "fa_IR",
@@ -37,7 +37,7 @@ export const metadata = {
     },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children}) {
     return (
         <html lang="fa" dir="rtl">
         <head>
@@ -62,8 +62,8 @@ export default function RootLayout({ children }) {
             <title></title>
         </head>
         <body className={`${Dana.className} antialiased`}>
-        <Header />
-        <StairTransition />
+        <Header/>
+        <StairTransition/>
         <PageTransition>{children}</PageTransition>
         </body>
         </html>
