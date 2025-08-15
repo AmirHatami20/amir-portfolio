@@ -28,7 +28,7 @@ export const metadata = {
         siteName: "سایت امیررضا حاتمی",
         images: [
             {
-                url: "https://amir-htm.ir/og-image.jpg",
+                url: "https://amir-htm.ir/images/photo.png",
                 width: 1200,
                 height: 630,
                 alt: "امیررضا حاتمی",
@@ -85,6 +85,7 @@ export default function RootLayout({children}) {
             <meta name="language" content="fa"/>
             <meta name="author" content="امیررضا حاتمی"/>
             <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+            <title/>
         </head>
         <body className={`${Dana.className} antialiased`}>
         <Header/>
