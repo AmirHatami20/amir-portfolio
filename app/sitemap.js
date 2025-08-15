@@ -13,7 +13,7 @@ export default function sitemap() {
         {
             url: `${base}/resume`,
             lastModified: now,
-            changeFrequency: "yearly",
+            changeFrequency: "monthly",
             priority: 0.85,
         },
         {
