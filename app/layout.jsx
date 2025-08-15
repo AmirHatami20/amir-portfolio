@@ -49,7 +49,7 @@ export default function RootLayout({children}) {
             {
                 "@type": "Person",
                 name: "امیررضا حاتمی",
-                alternateName: ["Amirreza Hatami", "Amir Reza Hatami", "Amir Hatami","امیر حاتمی","امیر رضا حاتمی","امیررضا حاتمی"],
+                alternateName: ["Amirreza Hatami", "Amir Reza Hatami", "Amir Hatami", "امیر حاتمی", "امیر رضا حاتمی", "امیررضا حاتمی"],
                 jobTitle: "توسعه‌دهنده وب",
                 url: "https://amir-htm.ir",
                 image: "https://amir-htm.ir/me.jpg",
@@ -57,6 +57,7 @@ export default function RootLayout({children}) {
                     "https://github.com/AmirHatami20",
                     "https://t.me/amir_hatami0",
                     "https://wa.me/989309242634",
+                    "https://www.linkedin.com/in/amir-hatami-39876a37a",
                 ],
                 knowsAbout: ["React", "Next.js", "Node.js", "UI/UX Design"],
                 address: {
