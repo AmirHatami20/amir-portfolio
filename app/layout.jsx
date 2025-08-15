@@ -89,6 +89,7 @@ export default function RootLayout({children}) {
             <title/>
         </head>
         <body className={`${Dana.className} antialiased`}>
+
         <Header/>
         <StairTransition/>
         <PageTransition>{children}</PageTransition>
