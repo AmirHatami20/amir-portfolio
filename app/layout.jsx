@@ -28,7 +28,7 @@ export const metadata = {
         siteName: "سایت امیررضا حاتمی",
         images: [
             {
-                url: "https://amir-htm.ir/images/photo.png",
+                url: "https://amir-htm.ir/opengraph-image.png",
                 width: 1200,
                 height: 630,
                 alt: "امیررضا حاتمی",
