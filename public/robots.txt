@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://amir-htm.ir
-
-# Sitemaps
-Sitemap: https://amir-htm.ir/sitemap.xml
