@@ -49,7 +49,7 @@ export default function RootLayout({children}) {
             {
                 "@type": "Person",
                 name: "امیررضا حاتمی",
-                alternateName: ["Amirreza Hatami", "Amir Reza Hatami", "Amir Hatami"],
+                alternateName: ["Amirreza Hatami", "Amir Reza Hatami", "Amir Hatami","امیر حاتمی","امیر رضا حاتمی","امیررضا حاتمی"],
                 jobTitle: "توسعه‌دهنده وب",
                 url: "https://amir-htm.ir",
                 image: "https://amir-htm.ir/me.jpg",
