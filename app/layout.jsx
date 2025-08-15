@@ -37,40 +37,64 @@ export const metadata = {
         locale: "fa_IR",
         type: "website",
     },
+    alternates: {
+        canonical: "https://amir-htm.ir",
+    },
 };
 
 export default function RootLayout({children}) {
-    const personJsonLd = {
+    const jsonLd = {
         "@context": "https://schema.org",
-        "@type": "Person",
-        name: "امیررضا حاتمی",
-        alternateName: ["Amirreza Hatami", "Amir Reza Hatami", "Amir Hatami"],
-        jobTitle: "توسعه‌دهنده وب",
-        url: "https://amir-htm.ir",
-        image: "https://amir-htm.ir/me.jpg",
-        sameAs: [
-            "https://github.com/AmirHatami20",
-            "https://t.me/amir_hatami0",
-            "https://wa.me/989309242634",
+        "@graph": [
+            {
+                "@type": "Person",
+                name: "امیررضا حاتمی",
+                alternateName: ["Amirreza Hatami", "Amir Reza Hatami", "Amir Hatami"],
+                jobTitle: "توسعه‌دهنده وب",
+                url: "https://amir-htm.ir",
+                image: "https://amir-htm.ir/me.jpg",
+                sameAs: [
+                    "https://github.com/AmirHatami20",
+                    "https://t.me/amir_hatami0",
+                    "https://wa.me/989309242634",
+                ],
+                knowsAbout: ["React", "Next.js", "Node.js", "UI/UX Design"],
+                address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Tehran",
+                    addressCountry: "IR",
+                },
+            },
+            {
+                "@type": "WebSite",
+                url: "https://amir-htm.ir",
+                name: "سایت امیررضا حاتمی",
+                potentialAction: {
+                    "@type": "SearchAction",
+                    target: "https://amir-htm.ir/search?q={search_term_string}",
+                    "query-input": "required name=search_term_string",
+                },
+            },
         ],
-        knowsAbout: ["React", "Next.js", "Node.js", "UI/UX Design"],
-        address: {
-            "@type": "PostalAddress",
-            addressLocality: "Tehran",
-            addressCountry: "IR",
-        },
     };
 
     return (
         <html lang="fa" dir="rtl">
+        <head>
+            <meta charSet="UTF-8"/>
+            <meta name="language" content="fa"/>
+            <meta name="author" content="امیررضا حاتمی"/>
+            <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+        </head>
         <body className={`${Dana.className} antialiased`}>
         <Header/>
         <StairTransition/>
         <PageTransition>{children}</PageTransition>
+
         <Script
-            id="ld-person"
+            id="ld-json"
             type="application/ld+json"
-            dangerouslySetInnerHTML={{__html: JSON.stringify(personJsonLd)}}
+            dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
         />
         </body>
         </html>
