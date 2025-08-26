@@ -43,6 +43,16 @@ const projects = [
     },
     {
         num: "04",
+        name: "سایت نظرسنجی",
+        description: 'پیاده سازی سایت نظرسنجی با قابلیت احراز هویت امن، قابلیت ثبت نظر، ساخت نظرسنجی، ذخیره نظرسنجی به همراه مدیرت داده ها با ReactQuery',
+        stack: ["NextJs", "Tailwind", "TypeScript", "MongoDB", "Multer", "JWT", "ReactQuery"],
+        image: "/images/work/Untitled-6.png",
+        icon: "/images/work/icons/6.png",
+        live: "https://fruits-shop-five.vercel.app/",
+        github: "https://github.com/AmirHatami20/fruits-shop"
+    },
+    {
+        num: "05",
         name: "فروشگاه میوه",
         description: 'پیاده‌سازی فروشگاه میوه با NextJs و تایپ‌اسکریپت، شامل پنل ادمین کامل، احراز هویت امن و پیشرفته، سبد خرید کارآمد و ذخیره‌سازی تصاویر در فضای ابری، به همراه مدیریت داده‌ها با ReactQuery.',
         stack: ["NextJs", "Tailwind", "TypeScript", "MongoDB", "Multer", "JWT", "ReactQuery"],
