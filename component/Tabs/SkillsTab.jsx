@@ -15,15 +15,15 @@ import {FaCode, FaDatabase, FaStar, FaSyncAlt, FaUserShield} from "react-icons/f
 const skills = [
     {name: "Next.js", Icon: SiNextdotjs, stars: 5},
     {name: "React", Icon: SiReact, stars: 5},
-    {name: "Node.js", Icon: SiNodedotjs, stars: 5},
-    {name: "MongoDB", Icon: SiMongodb, stars: 5},
+    {name: "Node.js", Icon: SiNodedotjs, stars: 4},
+    {name: "MongoDB", Icon: SiMongodb, stars: 4},
     {name: "HTML", Icon: SiHtml5, stars: 5},
     {name: "CSS", Icon: SiCss3, stars: 5},
     {name: "JavaScript", Icon: SiJavascript, stars: 5},
-    {name: "TypeScript", Icon: SiTypescript, stars: 5},
+    {name: "TypeScript", Icon: SiTypescript, stars: 4},
     {name: "Tailwind CSS", Icon: SiTailwindcss, stars: 5},
     {name: "Bootstrap", Icon: SiBootstrap, stars: 3},
-    {name: "Redux", Icon: SiRedux, stars: 5},
+    {name: "Redux", Icon: SiRedux, stars: 4},
     {name: "React Query", Icon: FaSyncAlt, stars: 5},
     {name: "PostgreSQL", Icon: SiPostgresql, stars: 3},
     {name: "Drizzle ORM", Icon: FaCode, stars: 4},
@@ -37,7 +37,8 @@ const SkillsTab = () => {
         <div className="tabs-wrapper">
             <h3>مهارت های من</h3>
             <p className="tabs-text">
-                تسلط کامل به توسعه فول‌استک با تمرکز بر MERN Stack و ابزارهای مکمل مانند Next.js، Tailwind CSS و TypeScript.
+                تسلط کامل به توسعه فول‌استک با تمرکز بر MERN Stack و ابزارهای مکمل مانند Next.js، Tailwind CSS و
+                TypeScript.
                 تجربه کار با پایگاه‌داده‌های NoSQL و SQL، مدیریت وضعیت با React Query.
             </p>
             <div
