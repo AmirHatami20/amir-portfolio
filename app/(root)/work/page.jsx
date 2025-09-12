@@ -1,171 +1,203 @@
-"use client"
-
-import {useState} from 'react'
-
-import {Swiper, SwiperSlide} from "swiper/react"
-import Image from "next/image"
+"use client";
+import {useState} from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
+import Image from "next/image";
 import {motion} from "framer-motion";
 import {BsArrowUpLeft, BsGithub} from "react-icons/bs";
+
+import {
+    FaReact,
+    FaNodeJs,
+    FaUserShield,
+} from "react-icons/fa";
+
+import {
+    SiNextdotjs,
+    SiTailwindcss,
+    SiMongodb,
+    SiPostgresql,
+    SiRedux,
+    SiJsonwebtokens,
+    SiTypescript, SiReactquery, SiExpress, SiJavascript,
+} from "react-icons/si";
+
 import toPersianNumber from "@/utils/toPersianNumber";
 import WorkSliderBtn from "@/component/WorkSliderBtn";
 import ArrowNav from "@/component/ArrowNav";
 
+const stackIcons = {
+    React: <FaReact className="text-sky-400 text-5xl"/>,
+    NextJS: <SiNextdotjs className="text-white text-5xl"/>,
+    TailwindCSS: <SiTailwindcss className="text-cyan-400 text-5xl"/>,
+    NodeJS: <FaNodeJs className="text-green-500 text-5xl"/>,
+    MongoDB: <SiMongodb className="text-green-600 text-5xl"/>,
+    ExpressJS: <SiExpress className="text-gray-500 text-5xl"/>,
+    PostgreSQL: <SiPostgresql className="text-sky-600 text-5xl"/>,
+    JavaScript: <SiJavascript className="text-yellow-400 text-5xl"/>,
+    TypeScript: <SiTypescript className="text-blue-500 text-5xl"/>,
+    ReactQuery: <SiReactquery className="text-pink-400 text-5xl"/>,
+    JWT: <SiJsonwebtokens className="text-yellow-500 text-5xl"/>,
+    Redux: <SiRedux className="text-purple-500 text-5xl"/>,
+    NextAuth: <FaUserShield className="text-indigo-500 text-5xl"/>,
+};
+
 const projects = [
     {
         num: "01",
-        name: "سایت سبزلرن",
-        description: 'پیاده‌سازی سایت آموزشی سبزلرن با MERN استک؛ شامل پنل ادمین، احراز هویت امن با JWT، جستجوی هوشمند، ذخیره تصاویر در فضای ابری، امکان ثبت نظر کاربران و پشتیبانی از حالت تیره و روشن.',
-        stack: ["React", "Tailwind", "NodeJs", "MongoDB", "Multer", "JWT"],
+        name: "فروشگاه اسباب‌بازی",
+        description: "پیاده‌سازی فول استک فروشگاه اسباب‌بازی با NextJs به صورت  ریسپانسیو و بهینه",
+        features: ["پنل ادمین", "احراز هویت امن", "جستجوی پیشرفته", "ثبت سفارش", "فیلتریتگ", "سبد خرید"],
+        stack: ["NextJS", "TailwindCSS", "TypeScript", "ReactQuery", "NodeJS", "MongoDB", "NextAuth"],
         image: "/images/work/Untitled-1.png",
         icon: "/images/work/icons/1.png",
-        live: "https://sabzlearn-frontend.vercel.app/",
-        github: "https://github.com/AmirHatami20/sabzlearn-frontend"
+        live: "https://toy-shop-pi.vercel.app",
+        github: "https://github.com/AmirHatami20/toy-shop",
     },
     {
         num: "02",
-        name: "کتابخانه آنلاین",
-        description: 'پیاده‌سازی سایت کتابخانه آنلاین با NextJs و تایپ‌اسکریپت،دارای پنل ادمین، احراز هویت امن با ورود گوگل، جستجوی پیشرفته، ذخیره‌سازی تصاویر در فضای ابری و مدیریت وضعیت با ReactQuery.',
-        stack: ["NextJs", "Tailwind", "TypeScript", "ReactQuery", "NextAuth", "PostgerSql", "React"],
+        name: "سایت سبزلرن",
+        description: "پیاده‌سازی فول استک سایت آموزشی سبزلرن با استک MERN به صورت ریسپانسیو و بهینه",
+        features: ["پنل ادمین", "جستجوی هوشمند", "احراز هویت امن", "سبد خرید", "حالت تاریک/روشن", "جستجوی هوشمند"],
+        stack: ["React", "TailwindCSS", "JavaScript", "NodeJS", "ExpressJS", "MongoDB", "JWT"],
         image: "/images/work/Untitled-2.png",
         icon: "/images/work/icons/2.png",
-        live: "https://library-khaki-sigma.vercel.app/",
-        github: "https://github.com/AmirHatami20/library"
+        live: "https://sabzlearn-frontend.vercel.app",
+        github: "https://github.com/AmirHatami20/sabzlearn-frontend",
     },
     {
         num: "03",
-        name: "فروشگاه پیتزا",
-        description: 'پیاده‌سازی فروشگاه پیتزا با NextJs و تایپ‌اسکریپت، دارای پنل ادمین حرفه ای، احراز هویت امن وپیشرفته با ورود گوگل، سبد خرید داینامیک با انتخاب سایز محصول، و ذخیره‌سازی تصاویر در فضای ابری.',
-        stack: ["NextJs", "Tailwind", "TypeScript", "MongoDB", "Multer", "NextAuth", "Redux"],
+        name: "کتابخانه آنلاین",
+        description: "پیاده‌سازی فول استک کتابخانه آنلاین با NextJs به صورت ریسپانسیو و بهینه",
+        features: ["پنل ادمین", "احراز هویت امن", "جستجوی پیشرفته", "فیلتریتگ", "ذخیره تصاویر", "مدیریت داده ها"],
+        stack: ["NextJS", "TailwindCSS", "TypeScript", "ReactQuery", "PostgreSQL", "NodeJS", "NextAuth"],
         image: "/images/work/Untitled-3.png",
-        icon: "/images/work/icons/3.svg",
-        live: "https://pizza-shop-fawn-zeta.vercel.app/",
-        github: "https://github.com/AmirHatami20/pizza-shop"
+        icon: "/images/work/icons/3.png",
+        live: "https://library-khaki-sigma.vercel.app",
+        github: "https://github.com/AmirHatami20/library",
     },
     {
         num: "04",
+        name: "فروشگاه پیتزا",
+        description: "پیاده‌سازی فول استک فروشگاه پیتزا با NextJs به صورت ریسپانسیو و بهینه",
+        features: ["پنل ادمین", "احراز هویت امن", "جستجوی پیشرفته", "فیلتریتگ", "ذخیره تصاویر", "سبد خرید"],
+        stack: ["NextJS", "TailwindCSS", "TypeScript", "ReactQuery", "NodeJS", "MongoDB", "NextAuth"],
+        image: "/images/work/Untitled-4.png",
+        icon: "/images/work/icons/4.svg",
+        live: "https://pizza-shop-fawn-zeta.vercel.app",
+        github: "https://github.com/AmirHatami20/pizza-shop",
+    },
+    {
+        num: "05",
+        name: "تره بار آنلاین",
+        description: "پیاده‌سازی فول استک تره بار آنلاین با NextJs به صورت ریسپانسیو و بهینه",
+        features: ["پنل ادمین", "احراز هویت امن", "فیلتریتگ", "ذخیره تصاویر", "سبد خرید"],
+        stack: ["NextJS", "TailwindCSS", "TypeScript", "Redux", "NodeJS", "MongoDB", "JWT"],
+        image: "/images/work/Untitled-5.png",
+        icon: "/images/work/icons/5.png",
+        live: "https://fruits-shop-five.vercel.app",
+        github: "https://github.com/AmirHatami20/fruits-shop",
+    },
+    {
+        num: "06",
         name: "سایت نظرسنجی",
-        description: 'پیاده سازی سایت نظرسنجی با قابلیت احراز هویت امن، قابلیت ثبت نظر، ساخت نظرسنجی، ذخیره نظرسنجی به همراه مدیرت داده ها با ReactQuery',
-        stack: ["NextJs", "Tailwind", "TypeScript", "MongoDB", "Multer", "JWT", "ReactQuery"],
+        description: "پیاده‌سازی فول استک سایت نظرسنجی آنلاین با NextJs به صورت ریسپانسیو و بهینه",
+        features: ["ساخت نظرسنجی", "رای دادن", "احراز هویت امن", "فیلترینگ", "ذخیره نظرسنجی", "فیلتریتگ"],
+        stack: ["React", "Redux", "TailwindCSS", "NodeJS", "PostgreSQL"],
         image: "/images/work/Untitled-6.png",
         icon: "/images/work/icons/6.png",
-        live: "https://fruits-shop-five.vercel.app/",
-        github: "https://github.com/AmirHatami20/fruits-shop"
+        live: "https://polling-site-dun.vercel.app",
+        github: "https://github.com/AmirHatami20/polling-site",
     },
-    {
-        num: "05",
-        name: "فروشگاه میوه",
-        description: 'پیاده‌سازی فروشگاه میوه با NextJs و تایپ‌اسکریپت، شامل پنل ادمین کامل، احراز هویت امن و پیشرفته، سبد خرید کارآمد و ذخیره‌سازی تصاویر در فضای ابری، به همراه مدیریت داده‌ها با ReactQuery.',
-        stack: ["NextJs", "Tailwind", "TypeScript", "MongoDB", "Multer", "JWT", "ReactQuery"],
-        image: "/images/work/Untitled-4.png",
-        icon: "/images/work/icons/4.png",
-        live: "https://fruits-shop-five.vercel.app/",
-        github: "https://github.com/AmirHatami20/fruits-shop"
-    },
-    {
-        num: "05",
-        name: "سایت سفر",
-        description: 'پیاده‌سازی سایت سفر بدون بک‌اند با NextJs و تایپ‌اسکریپت که با انیمیشن‌های جذاب و طراحی زیبا، تجربه کاربری فرانت‌اند روان و دلنشینی ارائه می‌دهد.',
-        stack: ["NextJs", "Tailwind", "TypeScript", "Animation"],
-        image: "/images/work/Untitled-5.png",
-        icon: "/images/work/icons/5.svg",
-        live: "https://travel-app-two-wine.vercel.app/",
-        github: "https://github.com/AmirHatami20/travel-app"
-    }
-]
+];
 
 
-const work = () => {
+const Work = () => {
     const [project, setProject] = useState(projects[0]);
 
     const handleSlideChange = (swiper) => {
-        const currentIndex = swiper.activeIndex;
-        setProject(projects[currentIndex]);
-    }
+        setProject(projects[swiper.activeIndex]);
+    };
 
     return (
         <motion.section
             initial={{opacity: 0}}
             animate={{
                 opacity: 1,
-                transition: {delay: 2, duration: 0.4, easing: 'easeIn'},
+                transition: {delay: 0.4, duration: 0.4, easing: "easeIn"},
             }}
             className="flex flex-col justify-center py-3 md:py-6 xl:px-0"
         >
             <div className="container">
                 <div className="flex flex-col lg:flex-row-reverse lg:gap-[30px]">
+                    {/* Slider */}
                     <div className="w-full lg:w-1/2">
                         <Swiper
                             spaceBetween={30}
                             slidesPerView={1}
-
                             className="lg:h-[500px] mb-4"
                             onSlideChange={handleSlideChange}
                         >
-                            {projects.map((project, index) => (
-                                <SwiperSlide
-                                    key={index}
-                                    className="w-full"
-                                >
+                            {projects.map((p, index) => (
+                                <SwiperSlide key={index} className="w-full">
                                     <div
-                                        className="h-[260px] lg:h-[450px] relative group flex justify-center items-center bg-pink-50/20"
-                                    >
-                                        {/* Overlay */}
+                                        className="h-[260px] lg:h-[450px] relative group flex justify-center items-center bg-pink-50/20">
                                         <div className="absolute top-0 bottom-0 w-full bg-black/10 z-10"/>
-                                        {/* Image */}
                                         <div className="relative w-full h-full">
                                             <Image
-                                                src={project.image}
+                                                src={p.image}
                                                 fill
                                                 className="object-cover object-top rounded"
-                                                alt="product Img"
+                                                alt="project Img"
                                             />
                                         </div>
                                     </div>
                                 </SwiperSlide>
                             ))}
-                            {/* Swiper buttons */}
                             <WorkSliderBtn/>
                         </Swiper>
                     </div>
-                    <div
-                        className="w-full lg:w-[50%] lg:h-[460px] flex flex-col lg:justify-between"
-                    >
+
+                    {/* Details */}
+                    <div className="w-full lg:w-[50%] lg:h-[460px] flex flex-col lg:justify-between">
                         <div className="flex flex-col gap-2">
-                            {/* Outline Num */}
-                            <div
-                                className="text-5xl lg:text-7xl leading-none font-bold text-transparent text-outline">
+                            <div className="text-5xl lg:text-7xl leading-none font-bold text-transparent text-outline">
                                 {toPersianNumber(project.num)}
                             </div>
-                            {/* Project Name */}
+
                             <div className="flex gap-x-3 items-center">
-                                <h2 className="text-4xl lg:text-[40px] leading-none text-white group-hover:text-accent transition-colors duration-200">
+                                <h2 className="text-2xl lg:text-[40px] leading-none text-white transition-colors duration-200">
                                     {project.name}
                                 </h2>
                                 <img
                                     src={project.icon}
                                     alt="icon"
-                                    className="w-9 lg:w-11 h-9 lg:h-11 rounded-full shadow"
+                                    className="w-10 md:w-13 h-10 md:h-13 rounded-full shadow"
                                 />
                             </div>
-                            {/* Project Desc */}
-                            <p className="text-white/70 my-1.5 md:my-2.5">
+
+                            <p className="text-white/70">
                                 {project.description}
                             </p>
-                            {/* Stock */}
-                            <ul className="flex flex-wrap gap-3">
-                                {project.stack.map((item, index) => (
-                                    <li
-                                        className="text-xl text-accent/70"
-                                        key={index}
-                                    >
-                                        {item}
-                                        {index !== project.stack.length - 1 && " ,"}
+
+                            <ul className="grid grid-cols-2 md:grid-cols-3 gap-1">
+                                {project.features.map((feature, idx) => (
+                                    <li key={idx} className="flex items-center gap-1.5 rounded-md">
+                                        <span className="w-3 h-3 bg-accent rounded-full"></span>
+                                        {feature}
                                     </li>
                                 ))}
                             </ul>
-                            {/* Border */}
+
+                            <ul className="flex flex-wrap items-center py-3 gap-2">
+                                {project.stack.map((tech, idx) => (
+                                    <li key={idx} className="flex items-center bg-[#232329] p-2 rounded-md">
+                                        {stackIcons[tech]}
+                                    </li>
+                                ))}
+                            </ul>
+
                             <div className="border border-white/20"/>
-                            {/* Buttons */}
+
                             <div className="flex gap-x-5">
                                 <div className="flex flex-col gap-y-1 items-center justify-center group">
                                     <a
@@ -176,7 +208,9 @@ const work = () => {
                                         <BsArrowUpLeft/>
                                     </a>
                                     <span
-                                        className="text-sm text-white/80 group-hover:text-accent transition-colors duration-500">لینک سایت</span>
+                                        className="text-sm text-white/80 group-hover:text-accent transition-colors duration-500">
+                                        لینک سایت
+                                    </span>
                                 </div>
                                 <div className="flex flex-col gap-y-1 items-center justify-center group">
                                     <a
@@ -187,16 +221,19 @@ const work = () => {
                                         <BsGithub/>
                                     </a>
                                     <span
-                                        className="text-sm text-white/80 group-hover:text-accent transition-colors duration-500">لینک گیت</span>
+                                        className="text-sm text-white/80 group-hover:text-accent transition-colors duration-500">
+                                        لینک گیت
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <ArrowNav prevPath="/services" nextPath="/contact"/>
         </motion.section>
     );
 };
 
-export default work;
+export default Work;
