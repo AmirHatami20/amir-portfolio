@@ -10,7 +10,7 @@ import {
     SiRedux,
     SiBootstrap, SiPostgresql, SiTypescript,
 } from "react-icons/si";
-import {FaCode, FaDatabase, FaStar, FaSyncAlt, FaUserShield} from "react-icons/fa";
+import {FaCode, FaStar, FaSyncAlt, FaUserShield} from "react-icons/fa";
 
 const skills = [
     {name: "Next.js", Icon: SiNextdotjs, stars: 5},
