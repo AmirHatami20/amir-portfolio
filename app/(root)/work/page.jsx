@@ -188,7 +188,7 @@ const Work = () => {
                                 ))}
                             </ul>
 
-                            <ul className="flex flex-wrap items-center py-3 gap-2">
+                            <ul className="flex flex-wrap items-center pb-1 mt-3 gap-2">
                                 {project.stack.map((tech, idx) => (
                                     <li key={idx} className="flex items-center bg-[#232329] p-2 rounded-md">
                                         {stackIcons[tech]}
