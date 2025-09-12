@@ -100,9 +100,9 @@ const projects = [
     {
         num: "06",
         name: "سایت نظرسنجی",
-        description: "پیاده‌سازی فول استک سایت نظرسنجی آنلاین با NextJs به صورت ریسپانسیو و بهینه",
-        features: ["ساخت نظرسنجی", "رای دادن", "احراز هویت امن", "فیلترینگ", "ذخیره نظرسنجی", "فیلتریتگ"],
-        stack: ["React", "Redux", "TailwindCSS", "NodeJS", "PostgreSQL"],
+        description: "پیاده‌سازی فول استک سایت نظرسنجی با NextJs به صورت ریسپانسیو و بهینه",
+        features: ["ساخت نظرسنجی", "امکان رای دادن", "احراز هویت امن", "دیدن نظرات", "ذخیره نظرسنجی", "فیلتریتگ"],
+        stack: ["NextJS", "TailwindCSS", "TypeScript", "ReactQuery", "NodeJS", "MongoDB", "JWT"],
         image: "/images/work/Untitled-6.png",
         icon: "/images/work/icons/6.png",
         live: "https://polling-site-dun.vercel.app",
@@ -231,7 +231,7 @@ const Work = () => {
                 </div>
             </div>
 
-            <ArrowNav prevPath="/services" nextPath="/contact"/>
+            <ArrowNav prevPath="/resume" nextPath="/services"/>
         </motion.section>
     );
 };

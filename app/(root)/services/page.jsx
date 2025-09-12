@@ -73,7 +73,7 @@ const Services = () => {
                             <p className="text-sm leading-6 lg:leading-7 lg:text-base text-white/70">{service.description}</p>
                         </div>
                     ))}
-                    <ArrowNav prevPath="/resume" nextPath="/work"/>
+                    <ArrowNav prevPath="/work" nextPath="/contact"/>
                 </motion.div>
             </div>
         </section>

@@ -30,7 +30,7 @@ const resume = () => {
                         {label: "درباره من", content: <AboutTab/>},
                     ]}
                 />
-                <ArrowNav prevPath="/" nextPath="/services"/>
+                <ArrowNav prevPath="/" nextPath="/work"/>
             </motion.div>
         </section>
     );
