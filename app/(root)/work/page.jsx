@@ -99,6 +99,33 @@ const projects = [
     },
     {
         num: "03",
+        name: "سایت سبزلرن",
+        description:
+            "پیاده‌سازی فول استک سایت آموزشی سبزلرن با استک MERN به صورت ریسپانسیو و بهینه",
+        features: [
+            "پنل ادمین",
+            "جستجوی هوشمند",
+            "احراز هویت امن",
+            "سبد خرید",
+            "حالت تاریک/روشن",
+            "جستجوی هوشمند",
+        ],
+        stack: [
+            "React",
+            "TailwindCSS",
+            "JavaScript",
+            "NodeJS",
+            "ExpressJS",
+            "MongoDB",
+            "JWT",
+        ],
+        image: "/images/work/sabzlearn.png",
+        icon: "/images/work/icons/sabzlearn.png",
+        live: "https://sabzlearn-frontend.vercel.app",
+        github: "https://github.com/AmirHatami20/sabzlearn-frontend",
+    },
+    {
+        num: "04",
         name: "کتابخانه آنلاین",
         description:
             "پیاده‌سازی فول استک کتابخانه آنلاین با NextJs به صورت ریسپانسیو و بهینه",
@@ -125,7 +152,7 @@ const projects = [
         github: "https://github.com/AmirHatami20/library",
     },
     {
-        num: "04",
+        num: "05",
         name: "فروشگاه پیتزا",
         description:
             "پیاده‌سازی فول استک فروشگاه پیتزا با NextJs به صورت ریسپانسیو و بهینه",
@@ -152,7 +179,7 @@ const projects = [
         github: "https://github.com/AmirHatami20/pizza-shop",
     },
     {
-        num: "05",
+        num: "06",
         name: "تره بار آنلاین",
         description:
             "پیاده‌سازی فول استک تره بار آنلاین با NextJs به صورت ریسپانسیو و بهینه",
@@ -178,7 +205,7 @@ const projects = [
         github: "https://github.com/AmirHatami20/fruits-shop",
     },
     {
-        num: "06",
+        num: "07",
         name: "سایت نظرسنجی",
         description:
             "پیاده‌سازی فول استک سایت نظرسنجی با NextJs به صورت ریسپانسیو و بهینه",
