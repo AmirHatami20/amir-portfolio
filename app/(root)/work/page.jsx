@@ -18,7 +18,7 @@ import {
     SiPostgresql,
     SiRedux,
     SiJsonwebtokens,
-    SiTypescript, SiReactquery, SiExpress, SiJavascript,
+    SiTypescript, SiReactquery, SiExpress, SiJavascript, SiPrisma,
 } from "react-icons/si";
 
 import toPersianNumber from "@/utils/toPersianNumber";
@@ -39,15 +39,32 @@ const stackIcons = {
     JWT: <SiJsonwebtokens className="text-yellow-500 text-5xl"/>,
     Redux: <SiRedux className="text-purple-500 text-5xl"/>,
     NextAuth: <FaUserShield className="text-indigo-500 text-5xl"/>,
+    Prisma: <SiPrisma className="text-teal-400 text-5xl"/>,
 };
 
 const projects = [
     {
         num: "01",
         name: "فروشگاه اسباب‌بازی",
-        description: "پیاده‌سازی فول استک فروشگاه اسباب‌بازی با NextJs به صورت  ریسپانسیو و بهینه",
-        features: ["پنل ادمین", "احراز هویت امن", "جستجوی پیشرفته", "ثبت سفارش", "فیلتریتگ", "سبد خرید"],
-        stack: ["NextJS", "TailwindCSS", "TypeScript", "ReactQuery", "NodeJS", "MongoDB", "NextAuth"],
+        description:
+            "پیاده‌سازی فول استک فروشگاه اسباب‌بازی با NextJs به صورت  ریسپانسیو و بهینه",
+        features: [
+            "پنل ادمین",
+            "احراز هویت امن",
+            "جستجوی پیشرفته",
+            "ثبت سفارش",
+            "فیلتریتگ",
+            "سبد خرید",
+        ],
+        stack: [
+            "NextJS",
+            "TailwindCSS",
+            "TypeScript",
+            "ReactQuery",
+            "NodeJS",
+            "MongoDB",
+            "NextAuth",
+        ],
         image: "/images/work/toy-shop.png",
         icon: "/images/work/icons/toy-shop.png",
         live: "https://toy-shop-pi.vercel.app",
@@ -55,21 +72,53 @@ const projects = [
     },
     {
         num: "02",
-        name: "سایت سبزلرن",
-        description: "پیاده‌سازی فول استک سایت آموزشی سبزلرن با استک MERN به صورت ریسپانسیو و بهینه",
-        features: ["پنل ادمین", "جستجوی هوشمند", "احراز هویت امن", "سبد خرید", "حالت تاریک/روشن", "جستجوی هوشمند"],
-        stack: ["React", "TailwindCSS", "JavaScript", "NodeJS", "ExpressJS", "MongoDB", "JWT"],
-        image: "/images/work/sabzlearn.png",
-        icon: "/images/work/icons/sabzlearn.png",
-        live: "https://sabzlearn-frontend.vercel.app",
-        github: "https://github.com/AmirHatami20/sabzlearn-frontend",
+        name: "فروشگاه کفش",
+        description:
+            "پیاده‌سازی فول استک فروشگاه کفش با NextJs به صورت ریسپانسیو و بهینه",
+        features: [
+            "پنل ادمین",
+            "احراز هویت امن",
+            "حالت تاریک/روشن",
+            "سبد خرید",
+            "ثبت سفارش",
+            "جستجوی پیشرفته",
+        ],
+        stack: [
+            "NextJS",
+            "NodeJS",
+            "Prisma",
+            "PostgreSQL",
+            "TailwindCSS",
+            "TypeScript",
+            "Redux",
+        ],
+        image: "/images/work/shoes.png",
+        icon: "/images/work/icons/shoes.png",
+        live: "https://shoes-shop-liart.vercel.app/",
+        github: "https://github.com/AmirHatami20/shoes-shop",
     },
     {
         num: "03",
         name: "کتابخانه آنلاین",
-        description: "پیاده‌سازی فول استک کتابخانه آنلاین با NextJs به صورت ریسپانسیو و بهینه",
-        features: ["پنل ادمین", "احراز هویت امن", "جستجوی پیشرفته", "فیلتریتگ", "ذخیره تصاویر", "مدیریت داده ها"],
-        stack: ["NextJS", "TailwindCSS", "TypeScript", "ReactQuery", "PostgreSQL", "NodeJS", "NextAuth"],
+        description:
+            "پیاده‌سازی فول استک کتابخانه آنلاین با NextJs به صورت ریسپانسیو و بهینه",
+        features: [
+            "پنل ادمین",
+            "احراز هویت امن",
+            "جستجوی پیشرفته",
+            "فیلتریتگ",
+            "ذخیره تصاویر",
+            "مدیریت داده ها",
+        ],
+        stack: [
+            "NextJS",
+            "TailwindCSS",
+            "TypeScript",
+            "ReactQuery",
+            "PostgreSQL",
+            "NodeJS",
+            "NextAuth",
+        ],
         image: "/images/work/library.png",
         icon: "/images/work/icons/library.png",
         live: "https://library-khaki-sigma.vercel.app",
@@ -78,9 +127,25 @@ const projects = [
     {
         num: "04",
         name: "فروشگاه پیتزا",
-        description: "پیاده‌سازی فول استک فروشگاه پیتزا با NextJs به صورت ریسپانسیو و بهینه",
-        features: ["پنل ادمین", "احراز هویت امن", "جستجوی پیشرفته", "فیلتریتگ", "ذخیره تصاویر", "سبد خرید"],
-        stack: ["NextJS", "TailwindCSS", "TypeScript", "ReactQuery", "NodeJS", "MongoDB", "NextAuth"],
+        description:
+            "پیاده‌سازی فول استک فروشگاه پیتزا با NextJs به صورت ریسپانسیو و بهینه",
+        features: [
+            "پنل ادمین",
+            "احراز هویت امن",
+            "جستجوی پیشرفته",
+            "فیلتریتگ",
+            "ذخیره تصاویر",
+            "سبد خرید",
+        ],
+        stack: [
+            "NextJS",
+            "TailwindCSS",
+            "TypeScript",
+            "ReactQuery",
+            "NodeJS",
+            "MongoDB",
+            "NextAuth",
+        ],
         image: "/images/work/pizza.png",
         icon: "/images/work/icons/pizza.svg",
         live: "https://pizza-shop-fawn-zeta.vercel.app",
@@ -89,9 +154,24 @@ const projects = [
     {
         num: "05",
         name: "تره بار آنلاین",
-        description: "پیاده‌سازی فول استک تره بار آنلاین با NextJs به صورت ریسپانسیو و بهینه",
-        features: ["پنل ادمین", "احراز هویت امن", "فیلتریتگ", "ذخیره تصاویر", "سبد خرید"],
-        stack: ["NextJS", "TailwindCSS", "TypeScript", "Redux", "NodeJS", "MongoDB", "JWT"],
+        description:
+            "پیاده‌سازی فول استک تره بار آنلاین با NextJs به صورت ریسپانسیو و بهینه",
+        features: [
+            "پنل ادمین",
+            "احراز هویت امن",
+            "فیلتریتگ",
+            "ذخیره تصاویر",
+            "سبد خرید",
+        ],
+        stack: [
+            "NextJS",
+            "TailwindCSS",
+            "TypeScript",
+            "Redux",
+            "NodeJS",
+            "MongoDB",
+            "JWT",
+        ],
         image: "/images/work/fruits.png",
         icon: "/images/work/icons/fruits.png",
         live: "https://fruits-shop-five.vercel.app",
@@ -100,9 +180,25 @@ const projects = [
     {
         num: "06",
         name: "سایت نظرسنجی",
-        description: "پیاده‌سازی فول استک سایت نظرسنجی با NextJs به صورت ریسپانسیو و بهینه",
-        features: ["ساخت نظرسنجی", "امکان رای دادن", "احراز هویت امن", "دیدن نظرات", "ذخیره نظرسنجی", "فیلتریتگ"],
-        stack: ["NextJS", "TailwindCSS", "TypeScript", "ReactQuery", "NodeJS", "MongoDB", "JWT"],
+        description:
+            "پیاده‌سازی فول استک سایت نظرسنجی با NextJs به صورت ریسپانسیو و بهینه",
+        features: [
+            "ساخت نظرسنجی",
+            "امکان رای دادن",
+            "احراز هویت امن",
+            "دیدن نظرات",
+            "ذخیره نظرسنجی",
+            "فیلتریتگ",
+        ],
+        stack: [
+            "NextJS",
+            "TailwindCSS",
+            "TypeScript",
+            "ReactQuery",
+            "NodeJS",
+            "MongoDB",
+            "JWT",
+        ],
         image: "/images/work/polling.png",
         icon: "/images/work/icons/polling.png",
         live: "https://polling-site-dun.vercel.app",
@@ -198,32 +294,42 @@ const Work = () => {
 
                             <div className="border border-white/20"/>
 
-                            <div className="flex gap-x-5">
-                                <div className="flex flex-col gap-y-1 items-center justify-center group">
-                                    <a
-                                        target="_blank"
-                                        href={project.live}
-                                        className="w-16 h-16 flex justify-center items-center text-white bg-[#232329] text-3xl rounded-full hover:bg-accent hover:text-primary transition duration-500"
-                                    >
-                                        <BsArrowUpLeft/>
-                                    </a>
-                                    <span
-                                        className="text-sm text-white/80 group-hover:text-accent transition-colors duration-500">
+                            <div className="flex flex-col gap-3">
+                                <div className="flex gap-x-5">
+                                    <div className="flex flex-col gap-y-1 items-center justify-center group">
+                                        <a
+                                            target="_blank"
+                                            href={project.live}
+                                            className="w-16 h-16 flex justify-center items-center text-white bg-[#232329] text-3xl rounded-full hover:bg-accent hover:text-primary transition duration-500"
+                                        >
+                                            <BsArrowUpLeft/>
+                                        </a>
+                                        <span
+                                            className="text-sm text-white/80 group-hover:text-accent transition-colors duration-500">
                                         لینک سایت
                                     </span>
-                                </div>
-                                <div className="flex flex-col gap-y-1 items-center justify-center group">
-                                    <a
-                                        target="_blank"
-                                        href={project.github}
-                                        className="w-16 h-16 flex justify-center items-center text-white bg-[#232329] text-3xl rounded-full hover:bg-accent hover:text-primary transition duration-500"
-                                    >
-                                        <BsGithub/>
-                                    </a>
-                                    <span
-                                        className="text-sm text-white/80 group-hover:text-accent transition-colors duration-500">
+                                    </div>
+                                    <div className="flex flex-col gap-y-1 items-center justify-center group">
+                                        <a
+                                            target="_blank"
+                                            href={project.github}
+                                            className="w-16 h-16 flex justify-center items-center text-white bg-[#232329] text-3xl rounded-full hover:bg-accent hover:text-primary transition duration-500"
+                                        >
+                                            <BsGithub/>
+                                        </a>
+                                        <span
+                                            className="text-sm text-white/80 group-hover:text-accent transition-colors duration-500">
                                         لینک گیت
                                     </span>
+                                    </div>
+                                </div>
+                                <div
+                                    className="flex items-center gap-1.5  text-white/90"
+                                >
+                                    <span className="text-yellow-400 text-lg animate-pulse">⚠️</span>
+                                    <p className="text-sm md:text-base">
+                                        در صورت باز نشدن سایت، از فیلترشکن استفاده کنید 🌐
+                                    </p>
                                 </div>
                             </div>
                         </div>
