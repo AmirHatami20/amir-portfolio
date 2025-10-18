@@ -8,9 +8,9 @@ import {
     SiNodedotjs,
     SiMongodb,
     SiRedux,
-    SiBootstrap, SiPostgresql, SiTypescript,
+    SiBootstrap, SiPostgresql, SiTypescript, SiPrisma,
 } from "react-icons/si";
-import {FaCode, FaStar, FaSyncAlt, FaUserShield} from "react-icons/fa";
+import {FaStar, FaSyncAlt, FaUserShield} from "react-icons/fa";
 
 const skills = [
     {name: "Next.js", Icon: SiNextdotjs, stars: 5},
@@ -26,7 +26,7 @@ const skills = [
     {name: "Redux", Icon: SiRedux, stars: 4},
     {name: "React Query", Icon: FaSyncAlt, stars: 5},
     {name: "PostgreSQL", Icon: SiPostgresql, stars: 3},
-    {name: "Drizzle ORM", Icon: FaCode, stars: 4},
+    {name: "Prisma", Icon: SiPrisma, stars: 4},
     {name: "NextAuth.js", Icon: FaUserShield, stars: 4},
 
 ];
