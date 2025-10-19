@@ -13,7 +13,7 @@ const Header = () => {
                     <Link href="/contact">
                         <Button>ارتباط با من</Button>
                     </Link>
-                    <Nav />
+                    <Nav/>
                 </div>
 
                 {/* Mobile nav */}

@@ -9,7 +9,6 @@ import SkillsTab from "@/component/Tabs/SkillsTab";
 import ArrowNav from "@/component/ArrowNav";
 import CoursesTab from "@/component/Tabs/CoursesTab";
 
-
 const resume = () => {
     return (
         <section className="py-4">

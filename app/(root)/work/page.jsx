@@ -233,8 +233,7 @@ const projects = [
     },
 ];
 
-
-const Work = () => {
+export const Work = () => {
     const [project, setProject] = useState(projects[0]);
 
     const handleSlideChange = (swiper) => {

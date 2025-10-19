@@ -1,42 +1,36 @@
-import {motion} from 'framer-motion';
+import {motion} from "framer-motion";
+import React from "react";
 
-const stairsAnimation = {
-    initial: {
-        top: "0%",
-    },
-    animate: {
-        top: "100%",
-    },
-    exit: {
-        top: ["100%", "0%"],
-    }
-}
+const TOTAL_STEPS = 6;
 
-const renderIndex = (index) => {
-    const totalSteps = 6
-    return totalSteps - index - 1;
-}
-
-const Stairs = () => {
+const Stairs = React.memo(() => {
     return (
-        <>
-            {[...Array(6)].map((_, index) => (
-                <motion.div
-                    key={index}
-                    variants={stairsAnimation}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
-                    transition={{
-                        duration: 0.3,
-                        ease: 'easeInOut',
-                        delay: renderIndex(index) * 0.1,
-                    }}
-                    className="h-full w-full bg-white relative"
-                />
-            ))}
-        </>
+        <div className="w-full h-screen flex fixed inset-0 z-50 pointer-events-none">
+            {Array.from({length: TOTAL_STEPS}).map((_, index) => {
+                const delay = (TOTAL_STEPS - index - 1) * 0.1;
+
+                return (
+                    <motion.div
+                        key={index}
+                        className="flex-1 h-full bg-white relative"
+                        variants={{
+                            initial: {top: "0%"},
+                            animate: {top: "100%"},
+                            exit: {top: ["100%", "0%"]},
+                        }}
+                        initial="initial"
+                        animate="animate"
+                        exit="exit"
+                        transition={{
+                            duration: 0.35,
+                            ease: [0.43, 0.13, 0.23, 0.96],
+                            delay,
+                        }}
+                    />
+                );
+            })}
+        </div>
     );
-};
+});
 
 export default Stairs;
