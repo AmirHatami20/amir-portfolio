@@ -3,19 +3,11 @@ import {FiDownload} from "react-icons/fi";
 import Social from "@/component/Social";
 import Photo from "@/component/Photo";
 import ArrowNav from "@/component/ArrowNav";
-import {motion} from "framer-motion";
 
 const Home = () => {
     return (
         <section className="container h-full">
-            <motion.div
-                className="grid grid-cols-1 lg:grid-cols-2 justify-between lg:pt-6 lg:pb-14 relative"
-                initial={{opacity: 0}}
-                animate={{
-                    opacity: 1,
-                    transition: {delay: 2, duration: 0.3, ease: "easeIn"}
-                }}
-            >
+            <div className="grid grid-cols-1 lg:grid-cols-2 justify-between lg:pt-6 lg:pb-14 relative">
                 {/* Image  */}
                 <div className="flex items-center justify-center w-full mb-6 lg:mb-0 lg:order-2">
                     <Photo/>
@@ -69,7 +61,7 @@ const Home = () => {
                     </div>
 
                 </div>
-            </motion.div>
+            </div>
             <ArrowNav prevPath="/contact" nextPath="/resume"/>
         </section>
     );
