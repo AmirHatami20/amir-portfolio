@@ -22,8 +22,8 @@ const Stairs = React.memo(() => {
                         animate="animate"
                         exit="exit"
                         transition={{
-                            duration: 0.35,
-                            ease: [0.43, 0.13, 0.23, 0.96],
+                            duration: 0.45,
+                            ease: "easeInOut",
                             delay,
                         }}
                     />
