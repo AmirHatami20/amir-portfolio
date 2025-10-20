@@ -245,7 +245,7 @@ export const Work = () => {
             initial={{opacity: 0}}
             animate={{
                 opacity: 1,
-                transition: {delay: 0.4, duration: 0.4, easing: "easeIn"},
+                transition: {delay: 2, duration: 0.3, ease: "easeIn"}
             }}
             className="flex flex-col justify-center py-3 md:py-6 xl:px-0"
         >
