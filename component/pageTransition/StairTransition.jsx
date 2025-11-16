@@ -14,14 +14,6 @@ const StairTransition = () => {
                     <Stairs/>
                 </div>
             </div>
-
-            <motion.div
-                initial={{opacity: 1}}
-                animate={{
-                    opacity: 0,
-                    transition: {delay: 1, duration: 0.3, ease: "easeInOut"},
-                }}
-            />
         </AnimatePresence>
     );
 };
