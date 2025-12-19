@@ -8,9 +8,12 @@ import {
     SiNodedotjs,
     SiMongodb,
     SiRedux,
-    SiBootstrap, SiPostgresql, SiTypescript, SiPrisma,
+    SiBootstrap,
+    SiPostgresql,
+    SiTypescript,
+    SiElectron
 } from "react-icons/si";
-import {FaStar, FaSyncAlt, FaUserShield} from "react-icons/fa";
+import {FaStar, FaSyncAlt, FaMobileAlt} from "react-icons/fa";
 
 const skills = [
     {name: "Next.js", Icon: SiNextdotjs, stars: 5},
@@ -26,11 +29,9 @@ const skills = [
     {name: "Redux", Icon: SiRedux, stars: 4},
     {name: "React Query", Icon: FaSyncAlt, stars: 5},
     {name: "PostgreSQL", Icon: SiPostgresql, stars: 3},
-    {name: "Prisma", Icon: SiPrisma, stars: 4},
-    {name: "NextAuth.js", Icon: FaUserShield, stars: 4},
-
+    {name: "React Native", Icon: FaMobileAlt, stars: 4},
+    {name: "Electron.js", Icon: SiElectron, stars: 4},
 ];
-
 
 const SkillsTab = () => {
     return (
@@ -41,8 +42,7 @@ const SkillsTab = () => {
                 TypeScript.
                 تجربه کار با پایگاه‌داده‌های NoSQL و SQL، مدیریت وضعیت با React Query.
             </p>
-            <div
-                className="w-full lg:max-w-[85%] mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4">
+            <div className="w-full lg:max-w-[85%] mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4">
                 {skills.map(({name, Icon, stars}) => (
                     <div
                         key={name}
