@@ -1,40 +1,221 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 👨‍💻 Amir Hatami — Full-Stack JavaScript Developer
 
-## Getting Started
+A modern, responsive personal portfolio built with **Next.js, React, TypeScript, Tailwind CSS, and Framer Motion**.
 
-First, run the development server:
+The portfolio showcases my development skills, projects, education, courses, soft skills, and professional interests, with a particular focus on **full-stack web development and application security**.
+
+## ✨ Features
+
+- 🎨 Modern and responsive UI
+- ⚡ Built with Next.js and React
+- 🔷 TypeScript-based architecture
+- 🎭 Smooth animations with Framer Motion
+- 📱 Fully responsive design
+- 🧩 Reusable UI components
+- 🗂️ Separated data, types, and components
+- 💼 Project showcase with live demos and GitHub repositories
+- 📚 Resume and education section
+- 🛠️ Technical and soft skills section
+- 📩 Contact form
+- 🌐 Social media and professional links
+- 🚀 Optimized for modern web development
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+- TypeScript
+- React
+- Next.js
+- Tailwind CSS
+- shadcn/ui
+- Redux
+- Zustand
+- TanStack Query
+- React Hook Form
+
+### Backend
+
+- Node.js
+- Express.js
+- NestJS
+- REST APIs
+- JWT
+- OAuth
+- Zod
+- bcrypt
+- Multer
+- Socket.IO
+
+### Database & ORM
+
+- MongoDB
+- PostgreSQL
+- Prisma
+- Drizzle ORM
+- Redis
+
+### Security
+
+- OWASP Top 10
+- Web Application Security
+- Authentication & Authorization
+- Security Testing
+- Vulnerability Identification
+- TryHackMe
+
+### DevOps & Cloud
+
+- Docker
+- Docker Compose
+- Git
+- GitHub
+- Vercel
+- Cloudflare
+- Cloud Storage
+- Linux
+
+### Cross-Platform
+
+- React Native
+- Electron
+- Tauri
+
+## 📁 Project Structure
+
+```text
+src/
+├── app/
+│   ├── page.tsx
+│   ├── resume/
+│   ├── work/
+│   ├── services/
+│   └── contact/
+│
+├── components/
+│   ├── ui/
+│   ├── layout/
+│   ├── common/
+│   └── sections/
+│
+├── data/
+│   ├── about.ts
+│   ├── contact.ts
+│   ├── courses.ts
+│   ├── education.ts
+│   ├── navigation.ts
+│   ├── projects.ts
+│   ├── skills.ts
+│   ├── socials.ts
+│   └── soft-skills.ts
+│
+├── types/
+│   ├── about.ts
+│   ├── contact.ts
+│   ├── course.ts
+│   ├── education.ts
+│   ├── navigation.ts
+│   ├── project.ts
+│   ├── skill.ts
+│   ├── social.ts
+│   └── soft-skill.ts
+│
+├── hooks/
+├── lib/
+└── utils/
+```
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/AmirHatami20/portfolio.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd portfolio
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the application in your browser:
 
-<<<<<<< HEAD
-You can start editing the page by modifying `app/page.jsx`. The page auto-updates as you edit the file.
-=======
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
->>>>>>> origin/main
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Build for Production
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Then start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Purpose
 
-## Deploy on Vercel
+This portfolio is designed to present my experience and capabilities as a **Full-Stack JavaScript Developer**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+My main areas of interest include:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Building modern full-stack web applications
+- Developing scalable backend APIs
+- Creating responsive and accessible user interfaces
+- Application security and vulnerability testing
+- Authentication and authorization
+- Modern JavaScript and TypeScript development
+- Continuously learning new technologies
+
+## 📈 Experience
+
+I have several years of hands-on development experience through intensive self-directed learning, practical projects, and professional software development.
+
+I currently work on:
+
+- Application development
+- Application testing
+- Identifying security vulnerabilities
+- Improving application reliability and security
+- Working with modern JavaScript technologies
+
+## 📬 Contact
+
+If you are interested in working together, feel free to reach out through the contact section of the portfolio or connect with me through my professional profiles.
+
+## ⭐ Projects
+
+Some of the projects showcased in this portfolio include:
+
+- Toy Store
+- Shoe Store
+- Educational Platform
+- Online Library
+- Pizza Store
+- Online Grocery Store
+- Polling Platform
+
+Each project includes its technology stack, main features, live demo, and source code when available.
+
+## 📄 License
+
+This project is a personal portfolio and is primarily intended for personal and professional presentation.
