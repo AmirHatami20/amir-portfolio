@@ -74,7 +74,7 @@ const Projects = () => {
               >
                 {/* Image */}
                 <Link
-                  href={`/project/${project.slug}`}
+                  href={`/projects/${project.slug}`}
                   className="block"
                   aria-label={`View ${project.name} project`}
                 >
@@ -148,7 +148,7 @@ const Projects = () => {
                   {/* Footer */}
                   <div className="flex items-center justify-between border-t border-white/10 pt-4">
                     <Link
-                      href={`/work/${project.slug}`}
+                      href={`/projects/${project.slug}`}
                       className="text-sm font-medium text-accent transition-colors hover:text-white"
                     >
                       View Project
