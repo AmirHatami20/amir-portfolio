@@ -39,8 +39,8 @@ export const projects: Project[] = [
       "MongoDB",
       "NextAuth",
     ],
-    image: "/assets/work/toy-store.png",
-    icon: "/assets/work/toy-store-icon.png",
+    image: "/images/work/toy-store.png",
+    icon: "/images/icons/toy-store-icon.png",
     live: "https://toy-shop-pi.vercel.app",
     github: "https://github.com/AmirHatami20/toy-shop",
   },
@@ -68,8 +68,8 @@ export const projects: Project[] = [
       "TypeScript",
       "Redux",
     ],
-    image: "/assets/work/shoe-store.png",
-    icon: "/assets/work/shoe-store-icon.png",
+    image: "/images/work/shoe-store.png",
+    icon: "/images/icons/shoe-store-icon.png",
     live: "https://shoes-shop-liart.vercel.app",
     github: "https://github.com/AmirHatami20/shoes-shop",
   },
@@ -97,8 +97,8 @@ export const projects: Project[] = [
       "MongoDB",
       "JWT",
     ],
-    image: "/assets/work/sabzlearn.png",
-    icon: "/assets/work/sabzlearn-icon.png",
+    image: "/images/work/sabzlearn.png",
+    icon: "/images/icons/sabzlearn-icon.png",
     live: "https://sabzlearn-frontend.vercel.app",
     github: "https://github.com/AmirHatami20/sabzlearn-frontend",
   },
@@ -126,8 +126,8 @@ export const projects: Project[] = [
       "NodeJS",
       "NextAuth",
     ],
-    image: "/assets/work/library.png",
-    icon: "/assets/work/library-icon.png",
+    image: "/images/work/library.png",
+    icon: "/images/icons/library-icon.png",
     live: "https://library-khaki-sigma.vercel.app",
     github: "https://github.com/AmirHatami20/library",
   },
@@ -155,8 +155,8 @@ export const projects: Project[] = [
       "MongoDB",
       "NextAuth",
     ],
-    image: "/assets/work/pizza-store.png",
-    icon: "/assets/work/pizza-store-icon.png",
+    image: "/images/work/pizza-store.png",
+    icon: "/images/icons/pizza-store-icon.png",
     live: "https://pizza-shop-fawn-zeta.vercel.app",
     github: "https://github.com/AmirHatami20/pizza-shop",
   },
@@ -184,8 +184,8 @@ export const projects: Project[] = [
       "MongoDB",
       "JWT",
     ],
-    image: "/assets/work/grocery-store.png",
-    icon: "/assets/work/grocery-store-icon.png",
+    image: "/images/work/grocery-store.png",
+    icon: "/images/icons/grocery-store-icon.png",
     live: "https://fruits-shop-five.vercel.app",
     github: "https://github.com/AmirHatami20/fruits-shop",
   },
@@ -213,8 +213,8 @@ export const projects: Project[] = [
       "MongoDB",
       "JWT",
     ],
-    image: "/assets/work/polling.png",
-    icon: "/assets/work/polling-icon.png",
+    image: "/images/work/polling.png",
+    icon: "/images/icons/polling-icon.png",
     live: "https://polling-site-dun.vercel.app",
     github: "https://github.com/AmirHatami20/polling-site",
   },
@@ -237,10 +237,12 @@ export const stackIcons: StackIcons = {
   Prisma: SiPrisma,
 };
 
-export const getProjectBySlug = (slug: string) => {
+export const getProjectBySlug = (slug: string): Project | undefined => {
   return projects.find((project) => project.slug === slug);
 };
 
-export const getProjectsByTechnology = (technology: ProjectTechnology) => {
+export const getProjectsByTechnology = (
+  technology: ProjectTechnology,
+): Project[] => {
   return projects.filter((project) => project.stack.includes(technology));
 };
