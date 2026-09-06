@@ -23,7 +23,7 @@ const Photo = () => {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-linear-to-b from-black/30 to-black/20 z-10" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/10 to-black/30 z-10" />
 
         {/* Animated Circle Border */}
         <motion.svg

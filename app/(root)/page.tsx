@@ -19,27 +19,31 @@ const Home = () => {
             I&apos;m
             <span className="text-accent"> Amirreza Hatami</span>
             <br />
-            A Full-Stack Software Engineer
+            Full-Stack Developer
             <br />
+            <span className="text-white/80">with a Security Mindset</span>
           </h1>
+
           {/* Mobile */}
-          <h1 className="lg:hidden mb-3 text-4xl text-accent">
-            Amirreza Hatami
+          <h1 className="lg:hidden mb-3 text-4xl">
+            <span className="text-accent">Amirreza</span> Hatami
           </h1>
+
           {/* Desktop */}
-          <p className="hidden lg:block w-full max-w-[550px] mb-6 lg:mb-9 text-white/80">
-            A seasoned Full-Stack Software Engineer with a proven ability to
-            build secure and safe sites, as well as robust desktop and mobile
-            applications. I specialize in modern web technologies like React and
-            Next.js for the frontend, ensuring dynamic and interactive user
-            experiences. On the backend, I leverage Node.js and MongoDB to
-            create scalable and secure architectures.
+          <p className="hidden lg:block w-full max-w-162.5 mb-6 lg:mb-9 text-white/80">
+            I build modern, scalable, and secure applications across the web,
+            desktop, and mobile. My stack includes React, Next.js, TypeScript,
+            Node.js, MongoDB, PostgreSQL, and modern state and data management
+            tools. With a strong focus on application security, I care about
+            building software that is not only functional and performant, but
+            also secure by design.
           </p>
+
           {/* Mobile */}
           <p className="block lg:hidden w-full mb-3 lg:mb-5 text-white/80">
-            Full-Stack Software Engineer building secure web, desktop, and
-            mobile applications. Expertise in React, Next.js, Node.js, and
-            MongoDB.
+            Full-Stack Developer building modern, scalable, and secure
+            applications with React, Next.js, TypeScript, Node.js, and modern
+            databases.
           </p>
 
           {/* Btn and socials */}
